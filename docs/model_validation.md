@@ -53,7 +53,7 @@ _Finding:_ Logistic Regression exhibits the lowest standard deviation ($\pm 0.02
 
 Reliability diagrams (calibration curves) map predicted probability outputs against actual empirical failure frequencies. In operational early-warning systems, probabilities must be calibrated: a predicted risk of 70% should correspond to approximately 70% observed landslide frequency.
 
-![Probability Calibration Diagram](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/ml/calibration_curve.png)
+![Probability Calibration Diagram](screenshots/model_calibration_curve.png)
 
 - **Brier Score Comparison:**
   - **Logistic Regression:** $\mathbf{0.1365}$ (Closest to 0; best probability calibration)
@@ -129,10 +129,10 @@ A forensic inspection was performed on the test errors produced at $T = 0.35$:
 ## 7. Artifacts Generated in Step 9
 
 1. **Validation & Stress-Testing Script:**
-   - [`scripts/validate_models.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/validate_models.py)
+   - [`scripts/validate_models.py`](../scripts/validate_models.py)
 2. **Comprehensive Validation Metrics JSON:**
-   - [`data/processed/ml/model_validation_metrics.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/ml/model_validation_metrics.json)
+   - [`data/processed/ml/model_validation_metrics.json`](../data/processed/ml/model_validation_metrics.json)
 3. **Probability Calibration Plot (High-Res PNG):**
-   - [`data/processed/ml/calibration_curve.png`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/ml/calibration_curve.png)
+   - [`data/processed/ml/calibration_curve.png`](../data/processed/ml/calibration_curve.png)
 4. **Brain Artifact Copy of Calibration Plot:**
-   - [calibration_curve.png](file:///C:/Users/LENEVO/.gemini/antigravity/brain/60cff11c-b882-4d8a-acc4-b7c147dd2bba/calibration_curve.png)
+   - [calibration_curve.png](screenshots/calibration_curve.png)

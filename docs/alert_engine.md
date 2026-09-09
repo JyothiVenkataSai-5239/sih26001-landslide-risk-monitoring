@@ -96,7 +96,7 @@ If an alert with identical parameters already exists in the active state window,
 
 ## 4. Dashboard Alert Feed Specification (`alerts.csv`)
 
-The primary output file [`data/processed/alerts/alerts.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/alerts/alerts.csv) provides an API-ready tabular stream:
+The primary output file [`data/processed/alerts/alerts.csv`](../data/processed/alerts/alerts.csv) provides an API-ready tabular stream:
 
 | Column Name              | Data Type | Description                                              | Example                            |
 | :----------------------- | :-------- | :------------------------------------------------------- | :--------------------------------- |

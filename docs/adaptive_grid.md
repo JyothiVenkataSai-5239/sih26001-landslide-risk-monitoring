@@ -26,7 +26,7 @@ Technical documentation, mathematical formulation, and multi-scale validation fo
 - **Grid Resolution:** `0.001°` ($\sim 100\text{ meters}$)
 - **Coordinate Reference System:** `EPSG:4326` (WGS 84 geographic coordinates)
 - **Total Valid Terrestrial Cells:** `34,371` cells
-- **Output Dataset:** [`data/processed/grid/coarse_grid_sikkim.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/grid/coarse_grid_sikkim.csv)
+- **Output Dataset:** [`data/processed/grid/coarse_grid_sikkim.csv`](../data/processed/grid/coarse_grid_sikkim.csv)
 - **Features Extracted per Coarse Cell:**
   - Topographic: `elevation`, `slope`, `aspect`, `curvature` (from 30m SRTM DEM)
   - Surface: `land_cover` (from 10m ESA WorldCover)
@@ -61,7 +61,7 @@ $$\mathbf{\text{Refinement Trigger}} = (P_{\text{susceptibility}} \ge 0.70) \lor
 - **Subdivision Factor:** $10 \times 10$ child grid per parent cell (100 sub-cells per parent).
 - **Fine Grid Resolution:** `0.0001°` ($\sim 10\text{ meters}$), matching the native pixel resolution of ESA WorldCover 10m.
 - **Total Fine Cells Generated:** `25,400` cells.
-- **Output Dataset:** [`data/processed/grid/fine_grid_refined.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/grid/fine_grid_refined.csv)
+- **Output Dataset:** [`data/processed/grid/fine_grid_refined.csv`](../data/processed/grid/fine_grid_refined.csv)
 - **Parent Traceability Schema:**
   - `fine_cell_id`: Unique child identifier (`FINE_<parent_num>_<child_idx>`)
   - `parent_cell_id`: Foreign key referencing parent (`COARSE_C<num>`)
@@ -84,7 +84,7 @@ $$\mathbf{\text{Refinement Trigger}} = (P_{\text{susceptibility}} \ge 0.70) \lor
 
 The demonstration visualization maps the multi-scale hierarchy across coarse screening, candidate selection, and 10m diagnostic resolution:
 
-![Adaptive Spatial Grid Map](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/grid/adaptive_grid_map.png)
+![Adaptive Spatial Grid Map](screenshots/adaptive_spatial_grid.png)
 
 1. **Panel A (Coarse 100m Susceptibility):** Regional overview across 34,371 cells with 85 authentic GSI landslide locations overlaid as triangles.
 2. **Panel B (Refinement Candidate Mask):** Spatial mask highlighting the 32.71% high-risk candidate cells, with the bounding box outlining the refined focal zone.
@@ -95,16 +95,16 @@ The demonstration visualization maps the multi-scale hierarchy across coarse scr
 ## 6. Output Files & Artifacts
 
 1. **Coarse Grid Dataset (~100m):**
-   - [`data/processed/grid/coarse_grid_sikkim.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/grid/coarse_grid_sikkim.csv) (34,371 rows, 14 columns)
+   - [`data/processed/grid/coarse_grid_sikkim.csv`](../data/processed/grid/coarse_grid_sikkim.csv) (34,371 rows, 14 columns)
 2. **Refined Fine Grid Dataset (~10m):**
-   - [`data/processed/grid/fine_grid_refined.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/grid/fine_grid_refined.csv) (25,400 rows, 19 columns)
+   - [`data/processed/grid/fine_grid_refined.csv`](../data/processed/grid/fine_grid_refined.csv) (25,400 rows, 19 columns)
 3. **Machine-Readable Metadata Summary:**
-   - [`data/processed/grid/adaptive_grid_summary.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/grid/adaptive_grid_summary.json)
+   - [`data/processed/grid/adaptive_grid_summary.json`](../data/processed/grid/adaptive_grid_summary.json)
 4. **Diagnostic Multi-Panel Visualization:**
-   - [`data/processed/grid/adaptive_grid_map.png`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/grid/adaptive_grid_map.png)
-   - [adaptive_grid_map.png](file:///C:/Users/LENEVO/.gemini/antigravity/brain/60cff11c-b882-4d8a-acc4-b7c147dd2bba/adaptive_grid_map.png)
+   - [`data/processed/grid/adaptive_grid_map.png`](../data/processed/grid/adaptive_grid_map.png)
+   - [adaptive_grid_map.png](screenshots/adaptive_grid_map.png)
 5. **Reproducible Pipeline Script:**
-   - [`scripts/build_adaptive_grid.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/build_adaptive_grid.py)
+   - [`scripts/build_adaptive_grid.py`](../scripts/build_adaptive_grid.py)
 
 ---
 

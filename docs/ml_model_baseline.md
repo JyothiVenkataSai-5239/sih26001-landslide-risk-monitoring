@@ -154,11 +154,11 @@ In spatial extrapolation across unvisited mountain blocks, tree ensembles (Rando
 ## 7. Artifacts & Generated Files
 
 1. **Model Checkpoints:**
-   - [`models/best_model.joblib`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/models/best_model.joblib) (Selected Best Pipeline: Logistic Regression)
-   - [`models/baseline_logistic_regression.joblib`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/models/baseline_logistic_regression.joblib)
-   - [`models/baseline_random_forest.joblib`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/models/baseline_random_forest.joblib)
-   - [`models/baseline_xgboost.joblib`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/models/baseline_xgboost.joblib)
+   - [`models/best_model.joblib`](../models/best_model.joblib) (Selected Best Pipeline: Logistic Regression)
+   - [`models/baseline_logistic_regression.joblib`](../models/baseline_logistic_regression.joblib)
+   - [`models/baseline_random_forest.joblib`](../models/baseline_random_forest.joblib)
+   - [`models/baseline_xgboost.joblib`](../models/baseline_xgboost.joblib)
 2. **Metrics & Comparison JSON:**
-   - [`data/processed/ml/baseline_models_metrics.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/ml/baseline_models_metrics.json)
+   - [`data/processed/ml/baseline_models_metrics.json`](../data/processed/ml/baseline_models_metrics.json)
 3. **Training & Evaluation Script:**
-   - [`scripts/train_baseline_models.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/train_baseline_models.py)
+   - [`scripts/train_baseline_models.py`](../scripts/train_baseline_models.py)

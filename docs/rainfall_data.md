@@ -41,7 +41,7 @@ Incorporating antecedent rainfall metrics (`rainfall_24h`, `rainfall_72h`, and `
 ## 5. Landslide Event Dates
 
 ### Extraction Methodology
-Historical landslide occurrence dates were parsed from the unstructured `history` attribute in [`data/processed/landslides/sikkim_landslides.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/landslides/sikkim_landslides.csv):
+Historical landslide occurrence dates were parsed from the unstructured `history` attribute in [`data/processed/landslides/sikkim_landslides.csv`](../data/processed/landslides/sikkim_landslides.csv):
 1. **Normalization:** Ordinal suffixes (`18th` $\rightarrow$ `18`), timestamps (`at 14.00 hrs`), and contextual descriptors (`in the midnight`, `morning`, `night`) were scrubbed.
 2. **Regex Parsing:** Matched explicit calendar patterns:
    - Day-Month-Year (`%d %B %Y` or `%d %b %Y`, e.g., `13 July 2012`, `9 May 2009`)
@@ -88,7 +88,7 @@ For all 700 records lacking exact calendar event dates, `rainfall_24h`, `rainfal
 
 ## 8. Output Dataset
 
-- **File Path:** [`data/processed/rainfall/sikkim_landslides_rainfall.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/rainfall/sikkim_landslides_rainfall.csv)
+- **File Path:** [`data/processed/rainfall/sikkim_landslides_rainfall.csv`](../data/processed/rainfall/sikkim_landslides_rainfall.csv)
 - **Format:** CSV format, retaining all original 11 landslide attributes from Step 2:
   - `sl_no`, `slide_no`, `state`, `district`, `slide_name`, `nh_sh_location`, `latitude`, `longitude`, `material_involved`, `movement_type`, `history`
 - **Appended Columns:**
@@ -102,7 +102,7 @@ For all 700 records lacking exact calendar event dates, `rainfall_24h`, `rainfal
 
 ## 9. Validation & Summary Statistics
 
-From [`data/processed/rainfall/rainfall_summary.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/rainfall/rainfall_summary.json):
+From [`data/processed/rainfall/rainfall_summary.json`](../data/processed/rainfall/rainfall_summary.json):
 
 ### Coverage Summary
 
@@ -139,6 +139,6 @@ From [`data/processed/rainfall/rainfall_summary.json`](file:///c:/Users/LENEVO/D
 
 The complete date parsing, remote COG retrieval, point sampling, accumulation logic, and summary metric generation pipeline is automated and reproducible via:
 
-- **Pipeline Script:** [`scripts/process_rainfall_features.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/process_rainfall_features.py)
+- **Pipeline Script:** [`scripts/process_rainfall_features.py`](../scripts/process_rainfall_features.py)
 - **Local Data Directory:** `data/raw/rainfall/` (330 daily GeoTIFFs)
-- **Summary Metrics:** [`data/processed/rainfall/rainfall_summary.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/rainfall/rainfall_summary.json)
+- **Summary Metrics:** [`data/processed/rainfall/rainfall_summary.json`](../data/processed/rainfall/rainfall_summary.json)

@@ -68,7 +68,7 @@ The land-cover classes adhere strictly to the official ESA WorldCover 11-class d
 
 ## 5. Verification Scripts & Reproducibility
 
-- Inspection script created: [`scripts/inspect_lulc_data.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/inspect_lulc_data.py)
+- Inspection script created: [`scripts/inspect_lulc_data.py`](../scripts/inspect_lulc_data.py)
 - Command to reproduce:
   ```powershell
   python scripts/inspect_lulc_data.py

@@ -138,7 +138,7 @@ The risk engine was executed across the Rongli–Pakyong–Singtam pilot corrido
 
 The generated diagnostic visualization maps the interaction between static predisposition and dynamic hydrological trigger:
 
-![Risk Diagnostic Map](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/risk/risk_diagnostic_map.png)
+![Risk Diagnostic Map](screenshots/sikkim_risk_map.png)
 
 1. **Panel 1 (Static Susceptibility $S$):** Intrinsic terrain proneness across 34,371 coarse cells with 85 historical GSI landslides.
 2. **Panel 2 (Dynamic Trigger Index $R_{\text{idx}}$):** Spatial rainfall loading distribution for the June 7, 2012 storm event.
@@ -150,16 +150,16 @@ The generated diagnostic visualization maps the interaction between static predi
 ## 7. Output Files & Artifacts
 
 1. **Coarse Grid Risk Dataset (~100m):**
-   - [`data/processed/risk/coarse_grid_risk.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/risk/coarse_grid_risk.csv) (`34,371` rows)
+   - [`data/processed/risk/coarse_grid_risk.csv`](../data/processed/risk/coarse_grid_risk.csv) (`34,371` rows)
 2. **Refined Fine Grid Risk Dataset (~10m):**
-   - [`data/processed/risk/fine_grid_risk.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/risk/fine_grid_risk.csv) (`25,400` rows)
+   - [`data/processed/risk/fine_grid_risk.csv`](../data/processed/risk/fine_grid_risk.csv) (`25,400` rows)
 3. **Machine-Readable Metadata & Formulation JSON:**
-   - [`data/processed/risk/risk_engine_summary.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/risk/risk_engine_summary.json)
+   - [`data/processed/risk/risk_engine_summary.json`](../data/processed/risk/risk_engine_summary.json)
 4. **Diagnostic Multi-Panel Risk Map:**
-   - [`data/processed/risk/risk_diagnostic_map.png`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/risk/risk_diagnostic_map.png)
-   - [risk_diagnostic_map.png](file:///C:/Users/LENEVO/.gemini/antigravity/brain/60cff11c-b882-4d8a-acc4-b7c147dd2bba/risk_diagnostic_map.png)
+   - [`data/processed/risk/risk_diagnostic_map.png`](../data/processed/risk/risk_diagnostic_map.png)
+   - [risk_diagnostic_map.png](screenshots/risk_diagnostic_map.png)
 5. **Reproducible Pipeline Script:**
-   - [`scripts/run_risk_engine.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/run_risk_engine.py)
+   - [`scripts/run_risk_engine.py`](../scripts/run_risk_engine.py)
 
 ---
 

@@ -1,13 +1,6 @@
 # SIH26001 — AI-Based Early Warning and Landslide Risk Monitoring System for NER
 
-[![FastAPI](https://img.shields.io/badge/Backend-FastAPI-009688.svg?logo=fastapi)](https://fastapi.tiangolo.com)
-[![React 18](https://img.shields.io/badge/Frontend-React_18-61DAFB.svg?logo=react)](https://reactjs.org)
-[![Leaflet](https://img.shields.io/badge/GIS-Leaflet-199900.svg?logo=leaflet)](https://leafletjs.com)
-[![Vite](https://img.shields.io/badge/Build-Vite_5-646CFF.svg?logo=vite)](https://vitejs.dev)
-[![scikit-learn](https://img.shields.io/badge/ML-scikit--learn-F7931E.svg?logo=scikitlearn)](https://scikit-learn.org)
-[![SHAP](https://img.shields.io/badge/XAI-KernelSHAP-blue.svg)](https://shap.readthedocs.io)
-[![Telegram Bot](https://img.shields.io/badge/Alerts-Telegram_Bot_API-2CA5E0.svg?logo=telegram)](https://core.telegram.org/bots/api)
-[![Status](https://img.shields.io/badge/Status-Prototype_Complete-success.svg)](#22-limitations)
+**FastAPI Backend** | **React 18 + Leaflet GIS** | **Vite 5** | **scikit-learn & SHAP** | **Telegram Bot API** | **Prototype Complete**
 
 An end-to-end, artificial intelligence-powered Landslide Early Warning System (LEWS) engineered for the **Sikkim Himalayas** in the North Eastern Region (NER) of India (**Smart India Hackathon Problem Statement SIH26001**). The system unifies Copernicus DEM topographic morphometrics, ESA WorldCover, SoilGrids physical properties, authentic GSI historical landslide inventory, and dynamic CHIRPS rainfall telemetry with calibrated machine learning, multi-horizon risk forecasting (+6h, +12h, +24h, +48h), SHAP model explainability, a high-performance Web GIS Command Center, and automated Telegram mobile alert dispatch.
 
@@ -45,18 +38,23 @@ An end-to-end, artificial intelligence-powered Landslide Early Warning System (L
 ## 1. Project Overview
 
 ### What Problem the Project Solves
+
 Mountainous terrain in India's North Eastern Region (NER) suffers from catastrophic, rainfall-induced slope failures that sever critical arterial lifelines (e.g., National Highway 10), destroy hill communities, and claim human lives every monsoon season. Conventional monitoring methods rely predominantly on static, regional-scale meteorological advisories that lack granular spatial susceptibility, fail to capture micro-topographic knickpoints, and do not provide actionable lead-time warnings for field disaster managers.
 
 ### Why Landslides Are Difficult to Monitor
+
 1. **Rugged, Inaccessible Terrain:** High elevation gradients (300 m to 8,500+ m) make physical sensor deployments sparse, expensive, and prone to telemetry outages.
 2. **Coupled Non-Linear Mechanics:** Slope instability is a non-linear interaction between static conditioning factors (steep slope, fragile lithology, soil drainage capacity) and dynamic hydrometeorological triggers (antecedent saturation + short-duration cloudbursts).
 3. **Data Sparsity & Spatial Heterogeneity:** Ground-truth failure dates are historically incomplete across remote mountain districts.
 
 ### Sikkim as the Pilot Region
+
 Sikkim sits in the active tectonic wedge of the Eastern Himalayas, bounded by Nepal, Tibet, and Bhutan. Its critical transport corridors—connecting Gangtok, Mangan, Pakyong Airport, Namchi, and Gyalshing—traverse steep, fractured phyllite and schist formations subject to intense orographic rainfall.
 
 ### Main Objective
+
 To design, validate, and deploy a working prototype Landslide Early Warning System that:
+
 - Accurately predicts spatial susceptibility across Sikkim using interpretable machine learning.
 - Implements an **Adaptive Spatial Grid** to focus computational resources where risk is highest.
 - Dynamically integrates multi-day rainfall telemetry and multi-horizon forecasts (+6h, +12h, +24h, +48h).
@@ -75,7 +73,7 @@ To design, validate, and deploy a working prototype Landslide Early Warning Syst
 - **Explainable AI (SHAP):** Interactive local and global feature attribution showing exactly why any location was flagged as vulnerable.
 - **Web GIS Command Center:** React 18 + Leaflet interactive dashboard with OpenStreetMap basemap, Sikkim border outline, and non-solid visual risk grid markers.
 - **Corridor Hotspot Monitoring:** Dedicated tracking of 8 critical transit nodes (e.g., Gangtok-Lumsay NH10, Mangan-Chungthang Highway, Pakyong Airport).
-- **Active Alert Engine:** Threshold-driven hazard classification into **HIGH** ($0.55 \le 	ext{Risk} < 0.75$) and **VERY HIGH** ($	ext{Risk} \ge 0.75$).
+- **Active Alert Engine:** Threshold-driven hazard classification into **HIGH** ($0.55 \le 	ext{Risk} < 0.75$) and **VERY HIGH** ($ ext{Risk} \ge 0.75$).
 - **Automatic Telegram Alerts:** Real-time background dispatch to a configured emergency response test group with strict duplicate suppression.
 - **60-Second Auto-Refresh:** Continuous backend polling that preserves user map zoom, pan coordinates, and layer toggles.
 - **Backend Health & Diagnostics:** Live system health endpoint inspecting dataset integrity and service status.
@@ -131,14 +129,14 @@ flowchart TD
 
 ## 4. Data Sources
 
-| Source | Resolution | Coverage | Contribution to Prototype |
-| :--- | :--- | :--- | :--- |
-| **Geological Survey of India (GSI) Bhukosh** | Spatial Point Data | Sikkim State | Ground-truth historical landslide inventory (777 verified failure polygons/points). |
-| **Copernicus GLO-30 DEM** | $30\,	ext{m}$ | $26.9^\circ	ext{N} - 28.3^\circ	ext{N}$ | Primary morphometrics: Elevation ($	ext{m}$), Slope ($^\circ$), Aspect, and Profile Curvature. |
-| **ESA WorldCover 2021** | $10\,	ext{m}$ | Global / Sikkim | Land Use / Land Cover (LULC) classification: tree cover, grassland, shrubland, cropland, built-up, bare soil, snow/ice. |
-| **ISRIC SoilGrids 2.0** | $250\,	ext{m}$ | 0–5 cm depth | Physical soil geotechnical parameters: Clay ($	ext{g/kg}$), Sand ($	ext{g/kg}$), Silt ($	ext{g/kg}$), and Bulk Density ($	ext{cg/cm}^3$). |
-| **CHIRPS Daily Reanalysis** | $0.05^\circ$ (~$5\,	ext{km}$) | Historical & Real-Time | Gridded precipitation series used to calibrate Antecedent Precipitation Indices ($24\,	ext{h}$, $72\,	ext{h}$, $7\,	ext{d}$). |
-| **Multi-Horizon Forecast Feeds** | Tabular / Station | 8 Hotspots | Simulated and telemetry-backed precipitation forecasts for $+6\,	ext{h}$, $+12\,	ext{h}$, $+24\,	ext{h}$, $+48\,	ext{h}$. |
+| Source                                       | Resolution                   | Coverage                              | Contribution to Prototype                                                                                                                 |
+| :------------------------------------------- | :--------------------------- | :------------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------- |
+| **Geological Survey of India (GSI) Bhukosh** | Spatial Point Data           | Sikkim State                          | Ground-truth historical landslide inventory (777 verified failure polygons/points).                                                       |
+| **Copernicus GLO-30 DEM**                    | $30\,	ext{m}$                 | $26.9^\circ	ext{N} - 28.3^\circ	ext{N}$ | Primary morphometrics: Elevation ($ ext{m}$), Slope ($^\circ$), Aspect, and Profile Curvature.                                            |
+| **ESA WorldCover 2021**                      | $10\,	ext{m}$                 | Global / Sikkim                       | Land Use / Land Cover (LULC) classification: tree cover, grassland, shrubland, cropland, built-up, bare soil, snow/ice.                   |
+| **ISRIC SoilGrids 2.0**                      | $250\,	ext{m}$                | 0–5 cm depth                          | Physical soil geotechnical parameters: Clay ($ ext{g/kg}$), Sand ($ ext{g/kg}$), Silt ($ ext{g/kg}$), and Bulk Density ($ ext{cg/cm}^3$). |
+| **CHIRPS Daily Reanalysis**                  | $0.05^\circ$ (~$5\,	ext{km}$) | Historical & Real-Time                | Gridded precipitation series used to calibrate Antecedent Precipitation Indices ($24\,	ext{h}$, $72\,	ext{h}$, $7\,	ext{d}$).                |
+| **Multi-Horizon Forecast Feeds**             | Tabular / Station            | 8 Hotspots                            | Simulated and telemetry-backed precipitation forecasts for $+6\,	ext{h}$, $+12\,	ext{h}$, $+24\,	ext{h}$, $+48\,	ext{h}$.                     |
 
 ---
 
@@ -154,7 +152,8 @@ flowchart TD
 ## 6. Terrain Features
 
 Topographic variables derived from the Copernicus 30 m DEM:
-1. **Elevation ($	ext{m}$):** Represents orographic precipitation zones and thermal lapse rates across Sikkim's river valleys and ridgelines.
+
+1. **Elevation ($ ext{m}$):** Represents orographic precipitation zones and thermal lapse rates across Sikkim's river valleys and ridgelines.
 2. **Slope ($^\circ$):** Fundamental driver of shear stress vs. shear strength; steep slopes ($>30^\circ$) represent high-susceptibility zones.
 3. **Aspect (Degrees):** Compass orientation affecting solar insolation, soil moisture retention, and exposure to south-west monsoon cloud masses.
 4. **Profile Curvature ($1/	ext{m}$):** Differentiates convex ridges (divergent water flow, shedding) from concave gullies (convergent flow, moisture accumulation, high failure risk).
@@ -164,14 +163,18 @@ Topographic variables derived from the Copernicus 30 m DEM:
 ## 7. Soil + Land Cover
 
 ### SoilGrids Geotechnical Attributes
+
 Soil drainage, shear failure threshold, and pore-water pressure dissipation are strongly governed by grain size distribution:
-- **Clay Content ($	ext{g/kg}$):** High clay fractions promote plastic failure when saturated.
-- **Sand Content ($	ext{g/kg}$):** Influences internal friction angle and hydraulic conductivity.
-- **Silt Content ($	ext{g/kg}$):** Affects soil cohesion and susceptibility to liquefaction.
-- **Bulk Density ($	ext{cg/cm}^3$):** Indicates soil compaction and structural porosity.
+
+- **Clay Content ($ ext{g/kg}$):** High clay fractions promote plastic failure when saturated.
+- **Sand Content ($ ext{g/kg}$):** Influences internal friction angle and hydraulic conductivity.
+- **Silt Content ($ ext{g/kg}$):** Affects soil cohesion and susceptibility to liquefaction.
+- **Bulk Density ($ ext{cg/cm}^3$):** Indicates soil compaction and structural porosity.
 
 ### ESA WorldCover Land Cover
+
 Root cohesion from forest canopies provides significant mechanical reinforcement against shallow translational slides:
+
 - **Tree Cover:** Imparts high root tensile reinforcement; lower baseline susceptibility.
 - **Bare / Sparse Vegetation & Disturbed Slopes:** High susceptibility to surface sheetwash, rill erosion, and shallow debris slides.
 - **Built-Up Infrastructure Corridors:** Anthropogenic slope cutting, terracing, and unmanaged drainage surcharge accelerate slope instability.
@@ -181,24 +184,27 @@ Root cohesion from forest canopies provides significant mechanical reinforcement
 ## 8. Machine Learning
 
 ### Model Training & Evaluation Strategy
+
 - **Sample Distribution:** 1,554 total samples (777 landslides, 777 non-landslide points).
 - **Spatial Validation:** Evaluated using **5-Fold Spatial Block Cross-Validation** (dividing Sikkim into 24 distinct geographic blocks) to completely prevent spatial autocorrelation leakage between training and testing sets.
 - **Algorithms Benchmarked:** Logistic Regression (L2 Regularized), Random Forest (100 trees), XGBoost (Gradient Boosted Trees).
 
 ### Actual Validation Benchmark Results
 
-| Model Architecture | Holdout ROC-AUC | Holdout PR-AUC | Brier Score | 5-Fold Spatial Block CV ROC-AUC | Multi-Seed Stability (Mean $\pm$ Std) |
-| :--- | :---: | :---: | :---: | :---: | :---: |
-| **Logistic Regression (Selected)** | **0.8921** | **0.8814** | **0.1365** | **0.8588** $\pm 0.0399$ | **0.8935** $\pm 0.0248$ |
-| **Random Forest** | 0.8592 | 0.8571 | 0.1548 | 0.8558 $\pm 0.0298$ | 0.8920 $\pm 0.0341$ |
-| **XGBoost** | 0.8480 | 0.8190 | 0.1569 | 0.8686 $\pm 0.0270$ | 0.8958 $\pm 0.0351$ |
+| Model Architecture                 | Holdout ROC-AUC | Holdout PR-AUC | Brier Score | 5-Fold Spatial Block CV ROC-AUC | Multi-Seed Stability (Mean $\pm$ Std) |
+| :--------------------------------- | :-------------: | :------------: | :---------: | :-----------------------------: | :-----------------------------------: |
+| **Logistic Regression (Selected)** |   **0.8921**    |   **0.8814**   | **0.1365**  |     **0.8588** $\pm 0.0399$     |        **0.8935** $\pm 0.0248$        |
+| **Random Forest**                  |     0.8592      |     0.8571     |   0.1548    |       0.8558 $\pm 0.0298$       |          0.8920 $\pm 0.0341$          |
+| **XGBoost**                        |     0.8480      |     0.8190     |   0.1569    |       0.8686 $\pm 0.0270$       |          0.8958 $\pm 0.0351$          |
 
 ### Why Logistic Regression Was Selected
+
 1. **Superior Generalization:** Highest holdout ROC-AUC (**0.8921**), highest PR-AUC (**0.8814**), and lowest Brier Calibration Score (**0.1365**).
 2. **True Probabilistic Well-Calibrated Outputs:** Logistic regression produces strictly monotonic probabilities that reliably feed downstream risk formulas without probability distortion.
 3. **Interpretability & Trust:** Transparent, un-distorted coefficients essential for public safety and administrative auditability.
 
 ### Optimized Operational Decision Threshold
+
 - At default threshold $T = 0.50$: 32 landslides missed (Recall = 82.42%).
 - At optimized prototype threshold **$T = 0.35$**:
   - **Recall:** **95.05%** (catches 173 of 182 test landslides).
@@ -211,6 +217,7 @@ Root cohesion from forest canopies provides significant mechanical reinforcement
 ## 9. Adaptive Spatial Grid
 
 ### Concept: "Computation Follows Risk"
+
 Running high-resolution micro-topographic simulations uniformly across all $7,096\,	ext{km}^2$ of rugged Himalayan terrain is computationally prohibitive and wasteful for stable granite cliffs or flat riverbeds. The **Adaptive Spatial Grid** concentrates compute where life and infrastructure are vulnerable.
 
 ```mermaid
@@ -225,7 +232,7 @@ graph TD
 
 - **Coarse Grid (1 km):** 34,371 cells covering 100% of Sikkim.
 - **Fine Grid (90 m):** 25,400 sub-cells dynamically triggered in high-susceptibility sectors ($S \ge 0.60$) and transit corridors.
-- **Traceability:** Every fine sub-cell preserves a foreign key reference to its parent coarse cell (`fine_cell_id` $	o$ `parent_coarse_id`).
+- **Traceability:** Every fine sub-cell preserves a foreign key reference to its parent coarse cell (`fine_cell_id` $ o$ `parent_coarse_id`).
 - **Computational Benefit:** Reduces fine-scale floating-point matrix computations by over **85%** while retaining sub-100m spatial resolution across active hazard corridors.
 
 ---
@@ -237,24 +244,29 @@ The system computes dynamic risk by coupling intrinsic terrain susceptibility wi
 $$R = w_s \cdot S + w_r \cdot R_{	ext{idx}}$$
 
 Where:
+
 - $S \in [0, 1]$: Static terrain susceptibility probability output by the ML model.
 - $R_{	ext{idx}} \in [0, 1]$: Dynamic Rainfall Trigger Index.
 - Prototype weights: $w_s = 0.55$, $w_r = 0.45$.
 
 ### Dynamic Rainfall Trigger Index ($R_{	ext{idx}}$)
-$$R_{	ext{idx}} = \min\left(1.0,\; 0.50 \cdot rac{R_{24	ext{h}}}{T_{24}} + 0.30 \cdot rac{R_{72	ext{h}}}{T_{72}} + 0.20 \cdot rac{R_{7	ext{d}}}{T_{7	ext{d}}}ight)$$
+
+$$
+R_{	ext{idx}} = \min\left(1.0,\; 0.50 \cdot rac{R_{24	ext{h}}}{T_{24}} + 0.30 \cdot rac{R_{72	ext{h}}}{T_{72}} + 0.20 \cdot rac{R_{7	ext{d}}}{T_{7	ext{d}}}
+ight)
+$$
 
 - $R_{24	ext{h}}, R_{72	ext{h}}, R_{7	ext{d}}$: Rolling cumulative precipitation.
 - $T_{24} = 75\,	ext{mm}, T_{72} = 125\,	ext{mm}, T_{7	ext{d}} = 220\,	ext{mm}$: Empirical Himalayan rainfall thresholds.
 
 ### Risk Tier Classification
 
-| Risk Tier | Score Range | Color Code | Operational Meaning |
-| :--- | :---: | :---: | :--- |
-| **LOW** | $0.00 \le R < 0.40$ | Green (`#10B981`) | Normal baseline conditions; standard vigilance. |
-| **MODERATE** | $0.40 \le R < 0.55$ | Amber (`#F59E0B`) | Elevated saturation; maintenance patrols alerted. |
-| **HIGH** | $0.55 \le R < 0.75$ | Orange (`#F97316`) | Warning issued; heavy equipment pre-positioned. |
-| **VERY HIGH** | $R \ge 0.75$ | Red (`#EF4444`) | Severe warning; traffic diversions and community evacuation advisories. |
+| Risk Tier     |     Score Range     |     Color Code     | Operational Meaning                                                     |
+| :------------ | :-----------------: | :----------------: | :---------------------------------------------------------------------- |
+| **LOW**       | $0.00 \le R < 0.40$ | Green (`#10B981`)  | Normal baseline conditions; standard vigilance.                         |
+| **MODERATE**  | $0.40 \le R < 0.55$ | Amber (`#F59E0B`)  | Elevated saturation; maintenance patrols alerted.                       |
+| **HIGH**      | $0.55 \le R < 0.75$ | Orange (`#F97316`) | Warning issued; heavy equipment pre-positioned.                         |
+| **VERY HIGH** |    $R \ge 0.75$     |  Red (`#EF4444`)   | Severe warning; traffic diversions and community evacuation advisories. |
 
 > [!NOTE]
 > These thresholds and formulas represent engineering research prototype assumptions and are **not official government disaster-management thresholds**.
@@ -264,6 +276,7 @@ $$R_{	ext{idx}} = \min\left(1.0,\; 0.50 \cdot rac{R_{24	ext{h}}}{T_{24}} + 0.30
 ## 11. Future Risk Forecast
 
 The LEWS computes multi-horizon forward-looking projections:
+
 - **+6 Hours:** Rapid-onset flash flood and immediate slope saturation outlook.
 - **+12 Hours:** Short-range convective storm evolution.
 - **+24 Hours:** Daily cumulative monsoon outlook.
@@ -271,18 +284,18 @@ The LEWS computes multi-horizon forward-looking projections:
 
 ### Infrastructure Corridor Hotspots Monitored
 
-| Station ID | Corridor / Infrastructure Name | District | Peak Outlook Horizon | Peak Risk Score |
-| :--- | :--- | :--- | :---: | :---: |
-| `STN_01_GANGTOK` | Gangtok - Lumsay Corridor (NH10) | Gangtok District | +24h | 0.9167 |
-| `STN_02_RONGLI` | Rongli - Rolep Hotspot Corridor | Pakyong District | +48h | 0.8125 |
-| `STN_03_PAKYONG` | Pakyong Airport / Pachey Slide Zone | Pakyong District | +48h | 0.7300 |
-| `STN_04_MANGAN` | Mangan - Chungthang Highway | Mangan (North Sikkim) | +48h | 0.7813 |
-| `STN_05_NAMCHI` | Namchi - Bhaichung Stadium Corridor | Namchi District | +48h | 0.6950 |
-| `STN_06_GYALSHING` | Gyalshing - Pelling Ridge Highway | Gyalshing District | +48h | 0.6400 |
-| `STN_07_SINGTHAM` | Singtham Riverbed Confluence Corridor | Gangtok District | +48h | 0.6850 |
-| `STN_08_OFFLINE` | Upper Lachen Remote Sensor Node | Mangan (North Sikkim) | +48h | 0.7100 |
+| Station ID         | Corridor / Infrastructure Name        | District              | Peak Outlook Horizon | Peak Risk Score |
+| :----------------- | :------------------------------------ | :-------------------- | :------------------: | :-------------: |
+| `STN_01_GANGTOK`   | Gangtok - Lumsay Corridor (NH10)      | Gangtok District      |         +24h         |     0.9167      |
+| `STN_02_RONGLI`    | Rongli - Rolep Hotspot Corridor       | Pakyong District      |         +48h         |     0.8125      |
+| `STN_03_PAKYONG`   | Pakyong Airport / Pachey Slide Zone   | Pakyong District      |         +48h         |     0.7300      |
+| `STN_04_MANGAN`    | Mangan - Chungthang Highway           | Mangan (North Sikkim) |         +48h         |     0.7813      |
+| `STN_05_NAMCHI`    | Namchi - Bhaichung Stadium Corridor   | Namchi District       |         +48h         |     0.6950      |
+| `STN_06_GYALSHING` | Gyalshing - Pelling Ridge Highway     | Gyalshing District    |         +48h         |     0.6400      |
+| `STN_07_SINGTHAM`  | Singtham Riverbed Confluence Corridor | Gangtok District      |         +48h         |     0.6850      |
+| `STN_08_OFFLINE`   | Upper Lachen Remote Sensor Node       | Mangan (North Sikkim) |         +48h         |     0.7100      |
 
-*(Note: `STN_08_OFFLINE` explicitly validates the system's graceful fallback to static terrain baseline when live rainfall telemetry is temporarily interrupted).*
+_(Note: `STN_08_OFFLINE` explicitly validates the system's graceful fallback to static terrain baseline when live rainfall telemetry is temporarily interrupted)._
 
 ---
 
@@ -300,21 +313,25 @@ Profile Curvature (1/m)   ========= (0.082)
 Aspect (deg)              ====== (0.054)
 ```
 
-- **Global Attribution:** Confirms that terrain **Slope ($^\circ$)** and **Elevation ($	ext{m}$)** provide the dominant physical baseline driving landslide potential in the Eastern Himalayas.
+- **Global Attribution:** Confirms that terrain **Slope ($^\circ$)** and **Elevation ($ ext{m}$)** provide the dominant physical baseline driving landslide potential in the Eastern Himalayas.
 - **Local Attribution (Risk Inspector Modal):** Clicking any grid cell or hotspot opens a detailed breakdown showing that specific location's terrain parameters, susceptibility, rainfall trigger index, and exact feature contributions.
-- **Scientific Notice:** The dashboard explicitly states: *"⚠️ Statistical associations only; not causal proof."*
+- **Scientific Notice:** The dashboard explicitly states: _"⚠️ Statistical associations only; not causal proof."_
 
 ---
 
 ## 13. Alert Engine
 
 ### Operational Trigger Logic
-Whenever a monitored location or grid cell exhibits $	ext{Risk} \ge 0.55$:
+
+Whenever a monitored location or grid cell exhibits $ ext{Risk} \ge 0.55$:
+
 - **$0.55 \le 	ext{Risk} < 0.75 \implies \mathbf{HIGH}$ Severity Warning**
-- **$	ext{Risk} \ge 0.75 \implies \mathbf{VERY\; HIGH}$ Severe Warning**
+- **$ ext{Risk} \ge 0.75 \implies \mathbf{VERY\; HIGH}$ Severe Warning**
 
 ### Alert Fields
+
 Each generated alert records:
+
 - `alert_id`: Unique persistent identifier (e.g., `ALT-HOTSPOT-0001`).
 - `location`: Monitored corridor name or coordinate reference.
 - `district`: Administrative district.
@@ -351,20 +368,22 @@ sequenceDiagram
 ```
 
 ### Key Security & Architectural Safeguards
+
 1. **Zero Secret Exposure:** Bot tokens are loaded strictly via `python-dotenv` / `os.getenv('TELEGRAM_BOT_TOKEN')`. Tokens are **never** committed to Git, hardcoded in source code, or printed in terminal logs.
 2. **Dedicated Target Group:** Configured specifically to Telegram group `-5127912563`.
 3. **Strict Duplicate Protection:** Uses a composite deduplication key:
-   $$	ext{Deduplication Key} = ig(	ext{station\_id},\; 	ext{forecast\_horizon},\; 	ext{alert\_severity}ig)$$
+   $$ ext{Deduplication Key} = ig( ext{station_id},\; ext{forecast_horizon},\; ext{alert_severity}ig)$$
    Guarantees that continuous 60-second polling cycles **never spam** the response team with duplicate messages.
 4. **Persistent State:** Keys are preserved across backend restarts via `auto_dispatched_keys.json`.
 5. **Controlled Test Runner:** `scripts/run_telegram_test.py` validates delivery of HIGH alerts, VERY HIGH alerts, and verifies duplicate rejection.
 
 ### Relevant Implementation Files
-- [`scripts/telegram_alert_sender.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/telegram_alert_sender.py) — Modular sender class with duplicate filtering and formatting.
-- [`scripts/run_telegram_test.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/run_telegram_test.py) — Dedicated test runner.
-- [`backend/app/auto_monitor.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/backend/app/auto_monitor.py) — Periodic background evaluator.
-- [`data/processed/alerts/telegram_test_log.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/alerts/telegram_test_log.json) — Structured audit log of test dispatches.
-- [`docs/telegram_alerts.md`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/docs/telegram_alerts.md) — Comprehensive technical protocol documentation.
+
+- [`scripts/telegram_alert_sender.py`](scripts/telegram_alert_sender.py) — Modular sender class with duplicate filtering and formatting.
+- [`scripts/run_telegram_test.py`](scripts/run_telegram_test.py) — Dedicated test runner.
+- [`backend/app/auto_monitor.py`](backend/app/auto_monitor.py) — Periodic background evaluator.
+- [`data/processed/alerts/telegram_test_log.json`](data/processed/alerts/telegram_test_log.json) — Structured audit log of test dispatches.
+- [`docs/telegram_alerts.md`](docs/telegram_alerts.md) — Comprehensive technical protocol documentation.
 
 ---
 
@@ -372,22 +391,23 @@ sequenceDiagram
 
 The backend is built with **FastAPI** and provides high-performance asynchronous REST endpoints:
 
-| Endpoint | Method | Purpose | Sample Response Size |
-| :--- | :---: | :--- | :---: |
-| `/health` | `GET` | System health check and dataset validation status. | 2 keys |
-| `/api/risk/coarse` | `GET` | 1 km coarse spatial grid risk scores with optional `sample_step`. | 3,438 items (`step=10`) |
-| `/api/risk/fine` | `GET` | 90 m refined sub-grid risk scores with limit parameter. | 500 items |
-| `/api/forecast` | `GET` | Multi-horizon forecast risk (+6h, +12h, +24h, +48h). | 3,438 items (`step=10`) |
-| `/api/hotspots` | `GET` | Key infrastructure corridor status, risk scores, and horizons. | 32 items |
-| `/api/alerts` | `GET` | Active system alerts categorized by severity. | 3,475 items |
-| `/api/alerts/monitor-status` | `GET` | Status of background monitor, dispatched keys, and last cycle. | 3 keys |
-| `/explainability/shap-summary` | `GET` | Global SHAP feature importances and dataset baseline values. | 4 keys |
+| Endpoint                       | Method | Purpose                                                           |  Sample Response Size   |
+| :----------------------------- | :----: | :---------------------------------------------------------------- | :---------------------: |
+| `/health`                      | `GET`  | System health check and dataset validation status.                |         2 keys          |
+| `/api/risk/coarse`             | `GET`  | 1 km coarse spatial grid risk scores with optional `sample_step`. | 3,438 items (`step=10`) |
+| `/api/risk/fine`               | `GET`  | 90 m refined sub-grid risk scores with limit parameter.           |        500 items        |
+| `/api/forecast`                | `GET`  | Multi-horizon forecast risk (+6h, +12h, +24h, +48h).              | 3,438 items (`step=10`) |
+| `/api/hotspots`                | `GET`  | Key infrastructure corridor status, risk scores, and horizons.    |        32 items         |
+| `/api/alerts`                  | `GET`  | Active system alerts categorized by severity.                     |       3,475 items       |
+| `/api/alerts/monitor-status`   | `GET`  | Status of background monitor, dispatched keys, and last cycle.    |         3 keys          |
+| `/explainability/shap-summary` | `GET`  | Global SHAP feature importances and dataset baseline values.      |         4 keys          |
 
 ---
 
 ## 16. React GIS Dashboard
 
 Built with **React 18**, **Vite**, and **Leaflet**:
+
 - **Full Basemap Coverage:** Seamless OpenStreetMap tiles with no API key requirement or watermark.
 - **Sikkim Boundary Outline:** Dashed blue state border outline (`#0284c7`) without dark masks, keeping surrounding terrain visible for geographic orientation.
 - **Leaflet Zoom Controls:** Visible `+` and `−` zoom buttons with constrained limits (`minZoom = 8`, `maxZoom = 16`) and strict bounding box (`maxBounds = SIKKIM_BOUNDS`, `maxBoundsViscosity = 1.0`).
@@ -398,23 +418,66 @@ Built with **React 18**, **Vite**, and **Leaflet**:
 
 ---
 
-## 17. Screenshots
+## 17. Screenshots & Diagnostic Visualizations
 
-The project includes authentic scientific visualization plots organized in [`docs/screenshots/`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/docs/screenshots/):
+The project includes authentic scientific visualization plots generated by the spatial analytics, machine learning, and forecast pipelines:
 
-| Visualization / Artifact | Description | File Path |
-| :--- | :--- | :--- |
-| **Sikkim Risk Diagnostic Map** | Diagnostic spatial distribution of regional landslide risk across Sikkim. | `docs/screenshots/sikkim_risk_map.png` |
-| **Forecast Risk Evolution** | Multi-horizon (+6h, +12h, +24h, +48h) risk progression across corridors. | `docs/screenshots/forecast_risk_evolution.png` |
-| **Adaptive Spatial Grid** | Demonstration of 1 km coarse screening and 90 m fine grid refinement. | `docs/screenshots/adaptive_spatial_grid.png` |
-| **SHAP Summary Plot** | Bee-swarm distribution of SHAP feature attributions across the test set. | `docs/screenshots/shap_summary_plot.png` |
-| **SHAP Importance Bar** | Ranked mean absolute SHAP values for slope, elevation, soil, and curvature. | `docs/screenshots/shap_importance_bar.png` |
-| **SHAP Local Explanation** | Local force/waterfall explanation for an individual high-risk location. | `docs/screenshots/shap_local_explanation.png` |
-| **Model Calibration Curve** | Reliability diagram showing probabilistic calibration of Logistic Regression. | `docs/screenshots/model_calibration_curve.png` |
-| **Historical Landslides Map** | Spatial distribution of the 777 GSI landslide inventory points in Sikkim. | `docs/screenshots/sikkim_historical_landslides.png` |
+### 1. Sikkim Landslide Risk Diagnostic Map
+Diagnostic spatial distribution of composite dynamic risk ($R = 0.55 \cdot S + 0.45 \cdot R_{\text{idx}}$) across Sikkim.
+
+![Sikkim Risk Diagnostic Map](docs/screenshots/sikkim_risk_map.png)
+
+---
+
+### 2. Multi-Horizon Forecast Risk Evolution
+Dynamic risk progression across +6h, +12h, +24h, and +48h forecast horizons for key mountain infrastructure corridors.
+
+![Forecast Risk Evolution](docs/screenshots/forecast_risk_evolution.png)
+
+---
+
+### 3. Adaptive Spatial Grid ("Computation Follows Risk")
+Demonstration of regional screening (1 km coarse cells) and dynamically refined micro-grids (90 m cells) focused on active hazard corridors.
+
+![Adaptive Spatial Grid](docs/screenshots/adaptive_spatial_grid.png)
+
+---
+
+### 4. Explainable AI: SHAP Global Feature Summary
+Bee-swarm distribution of SHAP attributions across holdout test landslides showing feature impact directions.
+
+![SHAP Summary Plot](docs/screenshots/shap_summary_plot.png)
+
+---
+
+### 5. Explainable AI: SHAP Feature Importance
+Ranked mean absolute SHAP values confirming Slope, Elevation, and Soil properties as the primary baseline predictors.
+
+![SHAP Feature Importance](docs/screenshots/shap_importance_bar.png)
+
+---
+
+### 6. Explainable AI: Local Decision Explanation
+Local waterfall feature attribution for an individual high-risk slope failure zone.
+
+![SHAP Local Explanation](docs/screenshots/shap_local_explanation.png)
+
+---
+
+### 7. Probabilistic Model Calibration Curve
+Reliability diagram illustrating monotonic probability calibration of the selected L2-regularized Logistic Regression model.
+
+![Model Calibration Curve](docs/screenshots/model_calibration_curve.png)
+
+---
+
+### 8. Historical Landslide Inventory Map
+Spatial distribution of 777 verified Geological Survey of India (GSI) landslide occurrences across Sikkim.
+
+![Historical Landslides Map](docs/screenshots/sikkim_historical_landslides.png)
 
 > [!NOTE]
-> Live browser-captured screenshots for the full dashboard UI, live forecast interactive panel, and live Telegram client screenshot are displayed dynamically in local runtime; static capture PNGs were not committed to the repo to preserve repository lightness. In accordance with project instructions, placeholders were **not** invented.
+> Live browser UI interactive panels (Command Center GIS dashboard, live inspector modal, and live Telegram chat client) operate dynamically during application runtime. In accordance with project instructions, non-existent capture placeholders were not invented.
 
 ---
 
@@ -476,18 +539,23 @@ SIH26001 LANSLIDES/
 ## 20. Installation & Running
 
 ### Prerequisites
+
 - Python 3.10 or higher
 - Node.js 18 or higher and npm
 
 ### 1. Configure Environment Variables
+
 Create a `.env` file in the project root directory:
+
 ```env
 TELEGRAM_BOT_TOKEN="your_telegram_bot_token_here"
 TELEGRAM_CHAT_ID="-5127912563"
 ```
-*(Credentials are strictly read at runtime; `.env` is git-ignored and never committed).*
+
+_(Credentials are strictly read at runtime; `.env` is git-ignored and never committed)._
 
 ### 2. Backend Setup (FastAPI)
+
 ```powershell
 # Create and activate virtual environment (optional)
 python -m venv venv
@@ -499,10 +567,12 @@ pip install -r backend/requirements.txt
 # Start FastAPI server on port 8000
 python -m uvicorn backend.app.main:app --reload --host 127.0.0.1 --port 8000
 ```
+
 - Interactive Swagger API Documentation: `http://127.0.0.1:8000/docs`
 - Health Verification Endpoint: `http://127.0.0.1:8000/health`
 
 ### 3. Frontend Setup (React + Vite)
+
 ```powershell
 # Navigate to frontend directory
 cd frontend
@@ -513,9 +583,11 @@ npm install
 # Start local development server
 npm run dev
 ```
+
 - Open GIS Command Center: `http://localhost:5173`
 
 ### 4. Running the Telegram Alert Dispatch Test
+
 ```powershell
 python scripts/run_telegram_test.py
 ```
@@ -536,6 +608,7 @@ python scripts/run_telegram_test.py
 ## 22. Limitations
 
 > [!IMPORTANT]
+>
 > 1. **Prototype Engineering Formulas:** The dynamic risk equation, weighting factors ($w_s = 0.55, w_r = 0.45$), and tier thresholds are prototype engineering assumptions for research and demonstration. They do **NOT** constitute official government disaster-management thresholds.
 > 2. **Statistical Estimates:** Machine learning susceptibility outputs represent probabilistic estimates, not guarantees of slope stability or failure.
 > 3. **Historical Inventory Incompleteness:** Regional archives in the Eastern Himalayas have incomplete failure timestamps for historical events prior to digital telemetry.
@@ -557,6 +630,7 @@ python scripts/run_telegram_test.py
 ## 24. Resume Project Summary
 
 ### SIH26001 — AI-Based Landslide Risk Monitoring System
+
 - **Architecture & Modeling:** Designed an end-to-end Landslide Early Warning System for Sikkim, India, leveraging Copernicus DEM morphometrics, ESA WorldCover, SoilGrids, and 777 GSI landslide records. Trained and validated an L2-regularized probabilistic model achieving **ROC-AUC = 0.8921**, with an operational threshold yielding **95.05% recall** under 5-Fold Spatial Block Cross-Validation.
 - **Adaptive GIS Computing:** Formulated an **Adaptive Spatial Grid** architecture ("Computation Follows Risk") screening 34,371 coarse regional cells ($1\text{ km}$) and dynamically focusing 25,400 micro-cells ($90\text{ m}$) on high-hazard transit corridors, reducing compute overhead by **85%**.
 - **Explainability & Full-Stack Deployment:** Integrated KernelSHAP for local and global feature attribution. Deployed an asynchronous FastAPI backend and a React 18 + Leaflet Web GIS command center with multi-horizon risk forecasting (+6h, +12h, +24h, +48h), 60-second auto-refresh, and automated, duplicate-protected Telegram emergency dispatch.

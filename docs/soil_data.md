@@ -72,13 +72,13 @@ This confirms high internal consistency and valid physical texture distribution 
 ## 6. Generated Output Files
 
 1. **Enriched Landslide Dataset:**
-   - File Path: [`data/processed/soil/sikkim_landslides_soil.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/soil/sikkim_landslides_soil.csv)
+   - File Path: [`data/processed/soil/sikkim_landslides_soil.csv`](../data/processed/soil/sikkim_landslides_soil.csv)
    - Rows: `777` rows (+ 1 header row)
    - Columns: 11 original landslide attributes + 4 new soil feature columns.
 2. **Metadata & Statistics Summary:**
-   - File Path: [`data/processed/soil/soil_summary.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/soil/soil_summary.json)
+   - File Path: [`data/processed/soil/soil_summary.json`](../data/processed/soil/soil_summary.json)
 3. **Reproducible Pipeline Script:**
-   - File Path: [`scripts/process_soil_features.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/process_soil_features.py)
+   - File Path: [`scripts/process_soil_features.py`](../scripts/process_soil_features.py)
 
 ---
 

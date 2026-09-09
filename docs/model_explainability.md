@@ -70,7 +70,7 @@ The global importance of each feature is quantified by its **Mean Absolute SHAP 
 
 The global SHAP summary beeswarm plot captures both the **magnitude** and **direction** of impact across every sample in the spatial test partition:
 
-![SHAP Summary Plot](shap_summary_plot.png)
+![SHAP Summary Plot](screenshots/shap_summary_plot.png)
 
 ### Key Behavioral Insights:
 
@@ -97,7 +97,7 @@ To demonstrate how the system explains individual high-risk predictions to opera
 - **Model Susceptibility Probability**: **$P = 0.9964$ (99.64%)**
 - **Log-Odds Shift**: From baseline $E[f(X)] = -0.0392$ to final output $f(x) = +5.6144$
 
-![SHAP Local Waterfall Explanation](shap_local_explanation.png)
+![SHAP Local Waterfall Explanation](screenshots/shap_local_explanation.png)
 
 ### Additive Attribution Breakdown:
 
@@ -120,7 +120,7 @@ $$
 
 The relative importance of all 15 inputs is visualized in the bar chart below:
 
-![Global Feature Importance Bar](shap_importance_bar.png)
+![Global Feature Importance Bar](screenshots/shap_importance_bar.png)
 
 ---
 

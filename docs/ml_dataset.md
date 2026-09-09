@@ -8,9 +8,9 @@ Technical documentation and quality validation metrics for the Machine Learning 
 
 - **Dataset Name:** Sikkim Landslide Early Warning ML Training Dataset
 - **Pilot Region:** Sikkim, North Eastern Region (NER), India
-- **Output File (CSV):** [`data/processed/ml/sikkim_ml_dataset.csv`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/ml/sikkim_ml_dataset.csv)
-- **Metadata Summary (JSON):** [`data/processed/ml/ml_dataset_summary.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/ml/ml_dataset_summary.json)
-- **Generation Script:** [`scripts/build_ml_dataset.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/build_ml_dataset.py)
+- **Output File (CSV):** [`data/processed/ml/sikkim_ml_dataset.csv`](../data/processed/ml/sikkim_ml_dataset.csv)
+- **Metadata Summary (JSON):** [`data/processed/ml/ml_dataset_summary.json`](../data/processed/ml/ml_dataset_summary.json)
+- **Generation Script:** [`scripts/build_ml_dataset.py`](../scripts/build_ml_dataset.py)
 - **Coordinate Reference System:** `EPSG:4326` (WGS 84 geographic latitude/longitude)
 - **Spatial Bounding Box:**
   - Latitude: `27.050417° N` to `27.848472° N`

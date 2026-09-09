@@ -50,13 +50,13 @@ The **Telegram Test-Alert Dispatcher** (`scripts/telegram_alert_sender.py` and `
 
 ### Module Deliverables:
 
-1. **[`scripts/telegram_alert_sender.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/telegram_alert_sender.py):**
+1. **[`scripts/telegram_alert_sender.py`](../scripts/telegram_alert_sender.py):**
    - Reusable `TelegramAlertSender` class.
    - Dynamic credential inspection via `os.getenv()`.
    - Markdown payload formatting with hazard severity icons (🔴/🟠), geomorphic parameters, and response advisories.
    - In-memory state tracking to prevent duplicate dispatches.
    - Status reporting: `SENT`, `FAILED`, `DISABLED`, `SKIPPED_DUPLICATE`.
-2. **[`scripts/run_telegram_test.py`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/scripts/run_telegram_test.py):**
+2. **[`scripts/run_telegram_test.py`](../scripts/run_telegram_test.py):**
    - Test runner that selects a controlled test batch from `alerts.csv` (1 HIGH alert, 1 VERY HIGH alert, and 1 duplicate check).
    - Generates machine-readable execution audit in `data/processed/alerts/telegram_test_log.json`.
 
@@ -151,7 +151,7 @@ In this prototype, alerts are automatically dispatched to a simulated DDMA test 
 
 ## 7. Execution Status & Audit Log
 
-- **Audit Log File:** [`data/processed/alerts/telegram_test_log.json`](file:///c:/Users/LENEVO/Desktop/SIH26001%20LANSLIDES/data/processed/alerts/telegram_test_log.json)
+- **Audit Log File:** [`data/processed/alerts/telegram_test_log.json`](../data/processed/alerts/telegram_test_log.json)
 - **Current Operational State:** `COMPLETE` (Verified Live Delivery to Telegram Group `-5127912563`).
 - **Bot Verification:** Telegram Bot `@SIH26001_Landslide_Alert_Bot` (`SIH26001 Landslide Alert`) authenticated via `getMe`.
 - **Live Dispatches Tested & Verified:**

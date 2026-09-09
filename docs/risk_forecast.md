@@ -159,7 +159,7 @@ The percentage of regional cells under **High Hazard** more than doubles from **
 
 The multi-panel diagnostic visualization [`data/processed/forecast/forecast_risk_evolution.png`](forecast_risk_evolution.png) captures the full dynamic evolution:
 
-![Forecast Risk Evolution](C:\Users\LENEVO.gemini\antigravity\brain\60cff11c-b882-4d8a-acc4-b7c147dd2bba\forecast_risk_evolution.png)
+![Forecast Risk Evolution](screenshots/forecast_risk_evolution.png)
 
 - **Panel A (Top-Left):** Hotspot trajectories crossing from Moderate/High into Very High risk bands, with `STN_08_OFFLINE` maintaining steady static susceptibility.
 - **Panel B (Top-Right):** Cumulative precipitation progression ($+6\text{h}$ through $+48\text{h}$) per station.
