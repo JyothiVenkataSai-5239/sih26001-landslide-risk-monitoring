@@ -1,0 +1,105 @@
+{
+  "step": "STEP 14B \u2014 TELEGRAM TEST ALERT DISPATCH",
+  "timestamp_utc": "2026-09-09T19:24:46Z",
+  "overall_status": "COMPLETE",
+  "telegram_bot_api_configured": true,
+  "credentials_detected": true,
+  "credential_details": {
+    "telegram_bot_token_present": true,
+    "telegram_chat_id_present": true
+  },
+  "target_channel": "Telegram Group (-5127912563)",
+  "public_channel_safeguard": "Strictly restricted from WhatsApp, public groups, or official government lines.",
+  "token_hardcoding": false,
+  "test_batch_summary": {
+    "total_test_cases": 3,
+    "messages_successfully_delivered": 2,
+    "messages_failed": 0,
+    "messages_disabled": 0,
+    "duplicate_alerts_prevented": 1
+  },
+  "test_alerts_evaluated": [
+    {
+      "test_case": "HIGH Alert",
+      "alert_id": "ALT-HOTSPOT-0001",
+      "location": "Gangtok - Lumsay Corridor (NH10)",
+      "district": "Gangtok District",
+      "forecast_horizon": "+6h",
+      "risk_score": 0.7468,
+      "severity": "HIGH",
+      "forecast_rainfall_mm": 24.0
+    },
+    {
+      "test_case": "VERY HIGH Alert",
+      "alert_id": "ALT-HOTSPOT-0002",
+      "location": "Gangtok - Lumsay Corridor (NH10)",
+      "district": "Gangtok District",
+      "forecast_horizon": "+12h",
+      "risk_score": 0.8493,
+      "severity": "VERY HIGH",
+      "forecast_rainfall_mm": 48.0
+    }
+  ],
+  "dispatch_log": [
+    {
+      "alert_id": "ALT-HOTSPOT-0001",
+      "location": "STN_01_GANGTOK",
+      "horizon": "+6h",
+      "severity": "HIGH",
+      "status": "SENT",
+      "telegram_message_id": 46,
+      "timestamp": "2026-09-09T19:24:48Z",
+      "test_case_label": "TEST_CASE_1_HIGH",
+      "alert_data": {
+        "alert_id": "ALT-HOTSPOT-0001",
+        "location": "Gangtok - Lumsay Corridor (NH10)",
+        "district": "Gangtok District",
+        "forecast_horizon": "+6h",
+        "risk_score": 0.7468,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": 24.0
+      }
+    },
+    {
+      "alert_id": "ALT-HOTSPOT-0002",
+      "location": "STN_01_GANGTOK",
+      "horizon": "+12h",
+      "severity": "VERY HIGH",
+      "status": "SENT",
+      "telegram_message_id": 47,
+      "timestamp": "2026-09-09T19:24:50Z",
+      "test_case_label": "TEST_CASE_2_VERY_HIGH",
+      "alert_data": {
+        "alert_id": "ALT-HOTSPOT-0002",
+        "location": "Gangtok - Lumsay Corridor (NH10)",
+        "district": "Gangtok District",
+        "forecast_horizon": "+12h",
+        "risk_score": 0.8493,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 48.0
+      }
+    },
+    {
+      "alert_id": "ALT-HOTSPOT-0002",
+      "location": "STN_01_GANGTOK",
+      "horizon": "+12h",
+      "severity": "VERY HIGH",
+      "status": "SKIPPED_DUPLICATE",
+      "reason": "Duplicate alert for location 'STN_01_GANGTOK', horizon '+12h', and severity 'VERY HIGH' was already processed in this session.",
+      "timestamp": "2026-09-09T19:24:50Z",
+      "test_case_label": "TEST_CASE_3_DUPLICATE_CHECK",
+      "alert_data": {
+        "alert_id": "ALT-HOTSPOT-0002",
+        "location": "Gangtok - Lumsay Corridor (NH10)",
+        "district": "Gangtok District",
+        "forecast_horizon": "+12h",
+        "risk_score": 0.8493,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 48.0
+      }
+    }
+  ],
+  "duplicate_protection_verified": true,
+  "sample_telegram_message_payload": "\ud83d\udea8 *[SIMULATED / PROTOTYPE ALERT]* \ud83d\udea8\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\ud83d\udd34 *SEVERITY:* VERY HIGH WARNING\n\ud83d\udccd *LOCATION:* Gangtok - Lumsay Corridor (NH10)\n\ud83c\udfdb *DISTRICT:* Gangtok District\n\u23f1 *FORECAST HORIZON:* +12h Outlook\n\ud83d\udcc8 *FORECAST RISK SCORE:* 0.8493\n\ud83c\udfd4 *STATIC SUSCEPTIBILITY (S):* 0.8920\n\ud83c\udf27 *RAINFALL TRIGGER (R_idx):* 0.8429\n\ud83d\udca7 *FORECAST PRECIPITATION:* 48.0 mm\n\ud83d\udd52 *TIMESTAMP (UTC):* 2026-09-08T18:05:43Z\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\n\u26a0\ufe0f *RECOMMENDED ACTION:*\nUrgent: Pre-position clearance machinery, alert NDRF/SDRF units, restrict traffic on vulnerable corridors.\n\n\u2139\ufe0f *SYSTEM NOTICE:*\n_In this prototype, alerts are automatically dispatched to a simulated DDMA test channel and displayed on the live GIS dashboard. In a production deployment, the same alert API can be connected to authorized state disaster-management communication channels._\n\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501\u2501",
+  "prototype_disclaimer": "In this prototype, alerts are automatically dispatched to a simulated DDMA test channel and displayed on the live GIS dashboard. In a production deployment, the same alert API can be connected to authorized state disaster-management communication channels."
+}

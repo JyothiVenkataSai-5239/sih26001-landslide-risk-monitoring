@@ -1,0 +1,153 @@
+{
+  "step": "STEP 13 \u2014 FUTURE RISK FORECAST",
+  "pilot_region": "Sikkim, India",
+  "forecast_horizons": [
+    "+6h",
+    "+12h",
+    "+24h",
+    "+48h"
+  ],
+  "rainfall_features_used": [
+    "forecast_period_rainfall_mm",
+    "projected_rolling_24h_mm",
+    "projected_rolling_72h_mm",
+    "projected_rolling_7d_mm",
+    "rainfall_trigger_index (R_idx)"
+  ],
+  "risk_coupling_formula": "Risk = 0.50*S + 0.30*R_idx + 0.20*(S*R_idx)",
+  "fallback_protocol": "Risk = S (static susceptibility) when forecast rainfall is unavailable/missing",
+  "hotspot_monitoring_stations_evaluated": 8,
+  "regional_grid_cells_evaluated": 34371,
+  "results_by_horizon": {
+    "+6h": {
+      "regional_mean_risk": 0.2889,
+      "regional_max_risk": 0.6323,
+      "regional_pct_high_or_very_high": 1.59,
+      "tier_counts": {
+        "Low": 21442,
+        "Moderate": 12383,
+        "High": 546
+      }
+    },
+    "+12h": {
+      "regional_mean_risk": 0.2993,
+      "regional_max_risk": 0.6688,
+      "regional_pct_high_or_very_high": 2.14,
+      "tier_counts": {
+        "Low": 20304,
+        "Moderate": 13330,
+        "High": 737
+      }
+    },
+    "+24h": {
+      "regional_mean_risk": 0.3131,
+      "regional_max_risk": 0.7174,
+      "regional_pct_high_or_very_high": 3.7,
+      "tier_counts": {
+        "Low": 19085,
+        "Moderate": 14015,
+        "High": 1271
+      }
+    },
+    "+48h": {
+      "regional_mean_risk": 0.3045,
+      "regional_max_risk": 0.687,
+      "regional_pct_high_or_very_high": 2.6,
+      "tier_counts": {
+        "Low": 19818,
+        "Moderate": 13659,
+        "High": 894
+      }
+    }
+  },
+  "hotspot_peak_forecast_summary": [
+    {
+      "station_id": "STN_01_GANGTOK",
+      "station_name": "Gangtok - Lumsay Corridor (NH10)",
+      "district": "Gangtok District",
+      "susceptibility_score": 0.892,
+      "peak_forecast_risk": 0.9167,
+      "peak_horizon": "+24h",
+      "peak_category": "Very High",
+      "status": "available"
+    },
+    {
+      "station_id": "STN_02_RONGLI",
+      "station_name": "Rongli - Rolep Hotspot Corridor",
+      "district": "Pakyong District",
+      "susceptibility_score": 0.865,
+      "peak_forecast_risk": 0.9055,
+      "peak_horizon": "+24h",
+      "peak_category": "Very High",
+      "status": "available"
+    },
+    {
+      "station_id": "STN_03_PAKYONG",
+      "station_name": "Pakyong Airport / Pachey Slide Zone",
+      "district": "Pakyong District",
+      "susceptibility_score": 0.82,
+      "peak_forecast_risk": 0.8208,
+      "peak_horizon": "+24h",
+      "peak_category": "Very High",
+      "status": "available"
+    },
+    {
+      "station_id": "STN_04_MANGAN",
+      "station_name": "Mangan - Chungthang Highway",
+      "district": "Mangan (North Sikkim)",
+      "susceptibility_score": 0.785,
+      "peak_forecast_risk": 0.8495,
+      "peak_horizon": "+12h",
+      "peak_category": "Very High",
+      "status": "available"
+    },
+    {
+      "station_id": "STN_05_NAMCHI",
+      "station_name": "Namchi - Jorethang Corridor",
+      "district": "Namchi (South Sikkim)",
+      "susceptibility_score": 0.64,
+      "peak_forecast_risk": 0.5771,
+      "peak_horizon": "+48h",
+      "peak_category": "High",
+      "status": "available"
+    },
+    {
+      "station_id": "STN_06_GEYZING",
+      "station_name": "Geyzing - Tharpu Slope Zone",
+      "district": "Geyzing (West Sikkim)",
+      "susceptibility_score": 0.58,
+      "peak_forecast_risk": 0.5061,
+      "peak_horizon": "+48h",
+      "peak_category": "Moderate",
+      "status": "available"
+    },
+    {
+      "station_id": "STN_07_SORENG",
+      "station_name": "Soreng - Nayabazar Fluvial Basin",
+      "district": "Soreng District",
+      "susceptibility_score": 0.42,
+      "peak_forecast_risk": 0.3742,
+      "peak_horizon": "+48h",
+      "peak_category": "Moderate",
+      "status": "available"
+    },
+    {
+      "station_id": "STN_08_OFFLINE",
+      "station_name": "Upper Lachen Remote Sensor Node (Telemetry Offline)",
+      "district": "Mangan (North Sikkim)",
+      "susceptibility_score": 0.71,
+      "peak_forecast_risk": 0.71,
+      "peak_horizon": "N/A (Offline)",
+      "peak_category": "High",
+      "status": "offline_fallback"
+    }
+  ],
+  "missing_data_validation": {
+    "offline_station_tested": "STN_08_OFFLINE",
+    "risk_score_assigned": 0.71,
+    "static_susceptibility": 0.71,
+    "verified_zero_fabrication": true,
+    "risk_mode": "static_baseline_only"
+  },
+  "limitations_and_disclaimer": "This forecasting module is a prototype research and demonstration artifact developed for SIH26001. It does NOT constitute an officially operational early-warning issuance system. Operational early warning requires calibrated meteorological numerical weather prediction (NWP) feeds, real-time telemetric rain-gauge networks, and formal geotechnical thresholds verified by GSI and SDMA."
+}

@@ -1,0 +1,71 @@
+{
+  "metadata": {
+    "task": "Prototype Risk Engine Implementation",
+    "pilot_corridor": "Rongli - Pakyong - Singtam (East/South Sikkim)",
+    "created_at": "2026-09-08 22:59:40",
+    "crs": "EPSG:4326 (WGS 84)",
+    "execution_time_seconds": 73.32
+  },
+  "mathematical_formulation": {
+    "risk_formula": "Risk = w_S * S + w_R * R_idx + w_inter * (S * R_idx)",
+    "weights": {
+      "w_S": 0.5,
+      "w_R": 0.3,
+      "w_inter": 0.2
+    },
+    "rainfall_trigger_index_formula": "R_idx = 0.40 * min(R24/75, 1) + 0.35 * min(R72/100, 1) + 0.25 * min(R7d/150, 1)",
+    "rainfall_saturation_thresholds_mm": {
+      "T_24h": 75.0,
+      "T_72h": 100.0,
+      "T_7d": 150.0
+    },
+    "missing_rainfall_protocol": "Zero fabrication. If rainfall is unavailable: Risk = S (static susceptibility fallback), risk_mode='static_baseline_only', rainfall_status='unavailable'."
+  },
+  "risk_thresholds": {
+    "Low": "< 0.35",
+    "Moderate": "0.35 to 0.55",
+    "High": "0.55 to 0.75",
+    "Very High": ">= 0.75"
+  },
+  "coarse_grid_evaluation": {
+    "total_cells_evaluated": 34371,
+    "susceptibility_statistics": {
+      "mean": 0.4983,
+      "min": 0.0036,
+      "max": 0.9993
+    },
+    "rainfall_trigger_statistics": {
+      "mean": 0.0843,
+      "min": 0.0332,
+      "max": 0.2574
+    },
+    "combined_risk_statistics": {
+      "mean": 0.2837,
+      "min": 0.0145,
+      "max": 0.6141
+    },
+    "risk_category_counts": {
+      "Low": 22089,
+      "Moderate": 11823,
+      "High": 459
+    }
+  },
+  "fine_grid_evaluation": {
+    "total_cells_evaluated": 25400,
+    "combined_risk_statistics": {
+      "mean": 0.3419,
+      "min": 0.1606,
+      "max": 0.5228
+    },
+    "risk_category_counts": {
+      "Low": 13662,
+      "Moderate": 11738
+    }
+  },
+  "output_files": {
+    "coarse_grid_risk_csv": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/risk/coarse_grid_risk.csv",
+    "fine_grid_risk_csv": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/risk/fine_grid_risk.csv",
+    "summary_json": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/risk/risk_engine_summary.json",
+    "diagnostic_map_png": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/risk/risk_diagnostic_map.png"
+  }
+}

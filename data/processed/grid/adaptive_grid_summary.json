@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "task": "Adaptive Spatial-Grid Prototype",
+    "created_at": "2026-09-08 22:35:13",
+    "pilot_corridor": "Rongli - Pakyong - Singtam (East/South Sikkim)",
+    "crs": "EPSG:4326 (WGS 84)",
+    "execution_time_seconds": 102.72
+  },
+  "coarse_grid": {
+    "resolution_deg": 0.001,
+    "resolution_meters_approx": 100,
+    "bounds": {
+      "latitude_min": 27.18,
+      "latitude_max": 27.35,
+      "longitude_min": 88.58,
+      "longitude_max": 88.78
+    },
+    "total_grid_vertices": 34371,
+    "valid_terrestrial_cells": 34371,
+    "susceptibility_statistics": {
+      "min": 0.0036,
+      "max": 0.9993,
+      "mean": 0.4983,
+      "std": 0.2386
+    },
+    "risk_tier_counts": {
+      "High": 11548,
+      "Low": 9364,
+      "Very High": 7220,
+      "Moderate": 6239
+    }
+  },
+  "refinement_rule": {
+    "definition": "needs_refinement = (susceptibility_prob >= 0.70) | ((susceptibility_prob >= 0.50) & (slope >= 30.0))",
+    "candidate_cells_flagged": 11244,
+    "candidate_percentage": 32.71
+  },
+  "fine_grid": {
+    "resolution_deg": 0.0001,
+    "resolution_meters_approx": 10,
+    "subdivision_factor": "10x10 per parent cell",
+    "parent_cells_refined": 254,
+    "total_fine_cells_computed": 25400,
+    "parent_traceability_verified": true,
+    "fine_susceptibility_statistics": {
+      "min": 0.2869,
+      "max": 0.9978,
+      "mean": 0.6425,
+      "std": 0.1004
+    },
+    "micro_risk_tier_counts": {
+      "High": 15127,
+      "Very High": 7174,
+      "Moderate": 2172,
+      "Extreme": 872,
+      "Low": 55
+    }
+  },
+  "output_files": {
+    "coarse_grid_csv": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/grid/coarse_grid_sikkim.csv",
+    "fine_grid_csv": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/grid/fine_grid_refined.csv",
+    "summary_json": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/grid/adaptive_grid_summary.json",
+    "diagnostic_map_png": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/grid/adaptive_grid_map.png"
+  }
+}

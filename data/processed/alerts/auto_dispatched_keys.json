@@ -1,0 +1,122 @@
+[
+  [
+    "STN_01_GANGTOK",
+    "+24h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_08_OFFLINE",
+    "+12h",
+    "HIGH"
+  ],
+  [
+    "STN_02_RONGLI",
+    "+12h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_03_PAKYONG",
+    "+6h",
+    "HIGH"
+  ],
+  [
+    "STN_01_GANGTOK",
+    "+12h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_05_NAMCHI",
+    "+48h",
+    "HIGH"
+  ],
+  [
+    "STN_08_OFFLINE",
+    "+48h",
+    "HIGH"
+  ],
+  [
+    "STN_03_PAKYONG",
+    "+12h",
+    "HIGH"
+  ],
+  [
+    "STN_03_PAKYONG",
+    "+48h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_01_GANGTOK",
+    "+6h",
+    "HIGH"
+  ],
+  [
+    "STN_TEST_VH",
+    "+24h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_04_MANGAN",
+    "+6h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_02_RONGLI",
+    "+48h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_04_MANGAN",
+    "+24h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_01_GANGTOK",
+    "+48h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_04_MANGAN",
+    "+12h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_05_NAMCHI",
+    "+24h",
+    "HIGH"
+  ],
+  [
+    "STN_08_OFFLINE",
+    "+24h",
+    "HIGH"
+  ],
+  [
+    "STN_TEST_HIGH",
+    "+6h",
+    "HIGH"
+  ],
+  [
+    "STN_03_PAKYONG",
+    "+24h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_02_RONGLI",
+    "+6h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_04_MANGAN",
+    "+48h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_02_RONGLI",
+    "+24h",
+    "VERY HIGH"
+  ],
+  [
+    "STN_08_OFFLINE",
+    "+6h",
+    "HIGH"
+  ]
+]

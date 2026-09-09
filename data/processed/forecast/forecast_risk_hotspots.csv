@@ -1,0 +1,33 @@
+station_id,station_name,district,latitude,longitude,elevation_m,forecast_horizon,susceptibility_score,forecast_rainfall_period_mm,projected_rolling_24h_mm,projected_rolling_72h_mm,projected_rolling_7d_mm,rainfall_trigger_index,forecast_risk_score,risk_category,risk_mode,forecast_status
+STN_01_GANGTOK,Gangtok - Lumsay Corridor (NH10),Gangtok District,27.3263,88.5954,1014.0,+6h,0.892,24.0,37.9,65.2,119.0,0.6287,0.7468,High,forecast_composite,available
+STN_01_GANGTOK,Gangtok - Lumsay Corridor (NH10),Gangtok District,27.3263,88.5954,1014.0,+12h,0.892,48.0,57.2,85.5,143.0,0.8429,0.8493,Very High,forecast_composite,available
+STN_01_GANGTOK,Gangtok - Lumsay Corridor (NH10),Gangtok District,27.3263,88.5954,1014.0,+24h,0.892,72.0,72.0,102.0,153.4,0.984,0.9167,Very High,forecast_composite,available
+STN_01_GANGTOK,Gangtok - Lumsay Corridor (NH10),Gangtok District,27.3263,88.5954,1014.0,+48h,0.892,110.0,38.0,128.5,177.9,0.8027,0.83,Very High,forecast_composite,available
+STN_02_RONGLI,Rongli - Rolep Hotspot Corridor,Pakyong District,27.185,88.692,1380.0,+6h,0.865,28.0,44.5,75.7,136.0,0.7288,0.7772,Very High,forecast_composite,available
+STN_02_RONGLI,Rongli - Rolep Hotspot Corridor,Pakyong District,27.185,88.692,1380.0,+12h,0.865,55.0,66.0,98.3,163.0,0.9462,0.88,Very High,forecast_composite,available
+STN_02_RONGLI,Rongli - Rolep Hotspot Corridor,Pakyong District,27.185,88.692,1380.0,+24h,0.865,85.0,85.0,119.7,177.6,1.0,0.9055,Very High,forecast_composite,available
+STN_02_RONGLI,Rongli - Rolep Hotspot Corridor,Pakyong District,27.185,88.692,1380.0,+48h,0.865,130.0,45.0,152.0,207.1,0.84,0.8298,Very High,forecast_composite,available
+STN_03_PAKYONG,Pakyong Airport / Pachey Slide Zone,Pakyong District,27.234,88.586,1250.0,+6h,0.82,20.0,31.2,54.8,100.0,0.5252,0.6537,High,forecast_composite,available
+STN_03_PAKYONG,Pakyong Airport / Pachey Slide Zone,Pakyong District,27.234,88.586,1250.0,+12h,0.82,40.0,47.5,71.7,120.0,0.7042,0.7367,High,forecast_composite,available
+STN_03_PAKYONG,Pakyong Airport / Pachey Slide Zone,Pakyong District,27.234,88.586,1250.0,+24h,0.82,65.0,65.0,90.3,133.6,0.8855,0.8208,Very High,forecast_composite,available
+STN_03_PAKYONG,Pakyong Airport / Pachey Slide Zone,Pakyong District,27.234,88.586,1250.0,+48h,0.82,95.0,30.0,110.0,152.1,0.76,0.7626,Very High,forecast_composite,available
+STN_04_MANGAN,Mangan - Chungthang Highway,Mangan (North Sikkim),27.502,88.534,1420.0,+6h,0.785,35.0,54.5,90.0,150.0,0.8557,0.7835,Very High,forecast_composite,available
+STN_04_MANGAN,Mangan - Chungthang Highway,Mangan (North Sikkim),27.502,88.534,1420.0,+12h,0.785,68.0,81.0,118.0,183.0,1.0,0.8495,Very High,forecast_composite,available
+STN_04_MANGAN,Mangan - Chungthang Highway,Mangan (North Sikkim),27.502,88.534,1420.0,+24h,0.785,98.0,98.0,138.0,196.6,1.0,0.8495,Very High,forecast_composite,available
+STN_04_MANGAN,Mangan - Chungthang Highway,Mangan (North Sikkim),27.502,88.534,1420.0,+48h,0.785,145.0,47.0,171.0,227.1,0.8507,0.7813,Very High,forecast_composite,available
+STN_05_NAMCHI,Namchi - Jorethang Corridor,Namchi (South Sikkim),27.168,88.352,1315.0,+6h,0.64,12.0,19.5,34.9,67.0,0.3379,0.4646,Moderate,forecast_composite,available
+STN_05_NAMCHI,Namchi - Jorethang Corridor,Namchi (South Sikkim),27.168,88.352,1315.0,+12h,0.64,26.0,31.0,46.8,81.0,0.4643,0.5187,Moderate,forecast_composite,available
+STN_05_NAMCHI,Namchi - Jorethang Corridor,Namchi (South Sikkim),27.168,88.352,1315.0,+24h,0.64,44.0,44.0,60.7,91.1,0.5989,0.5763,High,forecast_composite,available
+STN_05_NAMCHI,Namchi - Jorethang Corridor,Namchi (South Sikkim),27.168,88.352,1315.0,+48h,0.64,70.0,26.0,80.0,109.3,0.6008,0.5771,High,forecast_composite,available
+STN_06_GEYZING,Geyzing - Tharpu Slope Zone,Geyzing (West Sikkim),27.142,88.18,1580.0,+6h,0.58,10.0,16.0,28.3,55.0,0.2762,0.4049,Moderate,forecast_composite,available
+STN_06_GEYZING,Geyzing - Tharpu Slope Zone,Geyzing (West Sikkim),27.142,88.18,1580.0,+12h,0.58,22.0,26.0,38.7,67.0,0.3857,0.4504,Moderate,forecast_composite,available
+STN_06_GEYZING,Geyzing - Tharpu Slope Zone,Geyzing (West Sikkim),27.142,88.18,1580.0,+24h,0.58,36.0,36.0,49.3,74.6,0.489,0.4934,Moderate,forecast_composite,available
+STN_06_GEYZING,Geyzing - Tharpu Slope Zone,Geyzing (West Sikkim),27.142,88.18,1580.0,+48h,0.58,60.0,24.0,68.0,92.1,0.5196,0.5061,Moderate,forecast_composite,available
+STN_07_SORENG,Soreng - Nayabazar Fluvial Basin,Soreng District,27.165,88.214,920.0,+6h,0.42,8.0,12.5,21.8,43.0,0.2145,0.2924,Low,forecast_composite,available
+STN_07_SORENG,Soreng - Nayabazar Fluvial Basin,Soreng District,27.165,88.214,920.0,+12h,0.42,18.0,21.0,30.5,53.0,0.3071,0.3279,Low,forecast_composite,available
+STN_07_SORENG,Soreng - Nayabazar Fluvial Basin,Soreng District,27.165,88.214,920.0,+24h,0.42,30.0,30.0,40.0,60.0,0.4,0.3636,Moderate,forecast_composite,available
+STN_07_SORENG,Soreng - Nayabazar Fluvial Basin,Soreng District,27.165,88.214,920.0,+48h,0.42,50.0,20.0,56.0,75.0,0.4277,0.3742,Moderate,forecast_composite,available
+STN_08_OFFLINE,Upper Lachen Remote Sensor Node (Telemetry Offline),Mangan (North Sikkim),27.712,88.552,2750.0,+6h,0.71,,,,,,0.71,High,static_baseline_only,unavailable
+STN_08_OFFLINE,Upper Lachen Remote Sensor Node (Telemetry Offline),Mangan (North Sikkim),27.712,88.552,2750.0,+12h,0.71,,,,,,0.71,High,static_baseline_only,unavailable
+STN_08_OFFLINE,Upper Lachen Remote Sensor Node (Telemetry Offline),Mangan (North Sikkim),27.712,88.552,2750.0,+24h,0.71,,,,,,0.71,High,static_baseline_only,unavailable
+STN_08_OFFLINE,Upper Lachen Remote Sensor Node (Telemetry Offline),Mangan (North Sikkim),27.712,88.552,2750.0,+48h,0.71,,,,,,0.71,High,static_baseline_only,unavailable

@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.map-shell {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.map-container {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.sidebar {
+  backdrop-filter: blur(4px);
+}
+
+.controls {
+  backdrop-filter: blur(4px);
+}
+
+.custom-alert-icon {
+  display: block;
+}
+
+.inspector-panel {
+  backdrop-filter: blur(4px);
+  z-index: 50;
+}
+
+/* Darken OSM tiles for a command-center look without requiring an API key */
+.leaflet-container img {
+  filter: brightness(0.55) saturate(0.8) contrast(0.9);
+}
+
+.leaflet-container {
+  background: #0b1220;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1280px) {
+  /* Adjust for smaller screens if needed */
+}

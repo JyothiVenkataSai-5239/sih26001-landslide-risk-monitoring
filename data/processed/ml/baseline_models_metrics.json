@@ -1,0 +1,186 @@
+{
+  "metadata": {
+    "task": "Landslide Susceptibility Baseline Classification",
+    "created_at": "2026-09-08 22:12:15",
+    "pilot_region": "Sikkim, India",
+    "dataset_source": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/ml/sikkim_ml_dataset.csv",
+    "total_samples": 1554,
+    "features_used": [
+      "elevation",
+      "slope",
+      "aspect",
+      "curvature",
+      "soil_clay_0_5cm",
+      "soil_sand_0_5cm",
+      "soil_silt_0_5cm",
+      "soil_bulk_density_0_5cm",
+      "land_cover_10",
+      "land_cover_30",
+      "land_cover_50",
+      "land_cover_60",
+      "land_cover_70",
+      "land_cover_80",
+      "land_cover_100"
+    ]
+  },
+  "spatial_split": {
+    "method": "Spatial Block GroupShuffleSplit (5x5 Grid)",
+    "train_samples": 1200,
+    "test_samples": 353,
+    "train_positives": 594,
+    "train_negatives": 606,
+    "test_positives": 182,
+    "test_negatives": 171,
+    "min_distance_test_to_train_meters": 558.26,
+    "median_distance_test_to_train_meters": 4021.47,
+    "mean_distance_test_to_train_meters": 4575.62,
+    "buffer_threshold_meters": 500.0,
+    "spatial_leakage_detected": false
+  },
+  "model_comparisons": {
+    "Logistic_Regression": {
+      "display_name": "Logistic Regression",
+      "model_file": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/models/baseline_logistic_regression.joblib",
+      "metrics": {
+        "accuracy": 0.813,
+        "precision": 0.8152,
+        "recall": 0.8242,
+        "f1_score": 0.8197,
+        "roc_auc": 0.8921,
+        "pr_auc": 0.8814
+      },
+      "confusion_matrix": {
+        "true_negative": 137,
+        "false_positive": 34,
+        "false_negative": 32,
+        "true_positive": 150,
+        "matrix_2x2": [
+          [
+            137,
+            34
+          ],
+          [
+            32,
+            150
+          ]
+        ]
+      },
+      "top_feature_importances": {
+        "land_cover_50": 2.766703208789475,
+        "elevation": -2.4018502579058802,
+        "land_cover_10": -2.1679926156949434,
+        "soil_bulk_density_0_5cm": -0.9678449249122941,
+        "land_cover_60": 0.87989559588547,
+        "land_cover_80": -0.7700736747928741,
+        "slope": 0.389008144578442,
+        "land_cover_70": -0.3369856316789128,
+        "land_cover_100": -0.2842353885072547,
+        "soil_sand_0_5cm": -0.14124988744707292,
+        "soil_clay_0_5cm": 0.11585386784751427,
+        "aspect": 0.06627667096371781,
+        "soil_silt_0_5cm": 0.06330471739970425,
+        "land_cover_30": 0.06072107314408545,
+        "curvature": 0.03989592893660186
+      }
+    },
+    "Random_Forest": {
+      "display_name": "Random Forest",
+      "model_file": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/models/baseline_random_forest.joblib",
+      "metrics": {
+        "accuracy": 0.7932,
+        "precision": 0.7946,
+        "recall": 0.8077,
+        "f1_score": 0.8011,
+        "roc_auc": 0.8592,
+        "pr_auc": 0.8571
+      },
+      "confusion_matrix": {
+        "true_negative": 133,
+        "false_positive": 38,
+        "false_negative": 35,
+        "true_positive": 147,
+        "matrix_2x2": [
+          [
+            133,
+            38
+          ],
+          [
+            35,
+            147
+          ]
+        ]
+      },
+      "top_feature_importances": {
+        "elevation": 0.3033173920321053,
+        "soil_sand_0_5cm": 0.13739166985040344,
+        "soil_clay_0_5cm": 0.13566564608986878,
+        "slope": 0.1017528794791855,
+        "soil_bulk_density_0_5cm": 0.07922808313092065,
+        "soil_silt_0_5cm": 0.06331239689379016,
+        "aspect": 0.06103294231165876,
+        "curvature": 0.0410099021901905,
+        "land_cover_10": 0.03495985607829293,
+        "land_cover_50": 0.031074721422762557,
+        "land_cover_30": 0.007256021601826497,
+        "land_cover_100": 0.0021697833243417507,
+        "land_cover_60": 0.0017000218510043056,
+        "land_cover_70": 0.00012868374364885928,
+        "land_cover_80": 0.0
+      }
+    },
+    "XGBoost": {
+      "display_name": "XGBoost",
+      "model_file": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/models/baseline_xgboost.joblib",
+      "metrics": {
+        "accuracy": 0.7819,
+        "precision": 0.7807,
+        "recall": 0.8022,
+        "f1_score": 0.7913,
+        "roc_auc": 0.848,
+        "pr_auc": 0.819
+      },
+      "confusion_matrix": {
+        "true_negative": 130,
+        "false_positive": 41,
+        "false_negative": 36,
+        "true_positive": 146,
+        "matrix_2x2": [
+          [
+            130,
+            41
+          ],
+          [
+            36,
+            146
+          ]
+        ]
+      },
+      "top_feature_importances": {
+        "land_cover_50": 0.2502214312553406,
+        "elevation": 0.14794866740703583,
+        "land_cover_10": 0.13646213710308075,
+        "soil_sand_0_5cm": 0.07428403943777084,
+        "soil_bulk_density_0_5cm": 0.06784038245677948,
+        "slope": 0.05798861384391785,
+        "soil_clay_0_5cm": 0.055515315383672714,
+        "aspect": 0.05048679932951927,
+        "soil_silt_0_5cm": 0.04412258416414261,
+        "land_cover_30": 0.040525276213884354,
+        "curvature": 0.03922145813703537,
+        "land_cover_60": 0.03538324683904648,
+        "land_cover_70": 0.0,
+        "land_cover_80": 0.0,
+        "land_cover_100": 0.0
+      }
+    }
+  },
+  "best_model": {
+    "model_key": "Logistic_Regression",
+    "display_name": "Logistic Regression",
+    "model_file": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/models/best_model.joblib",
+    "roc_auc": 0.8921,
+    "pr_auc": 0.8814,
+    "accuracy": 0.813,
+    "f1_score": 0.8197
+  }
+}

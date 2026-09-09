@@ -1,0 +1,427 @@
+{
+  "audit_metadata": {
+    "audit_timestamp": "2026-09-08T21:27:09.127273",
+    "decision_status": "VERIFIED",
+    "decision_explanation": "All 74 dated landslide records possess mathematically exact 24h, 72h, and 7-day cumulative rainfall values extracted from authentic CHIRPS v2.0 NetCDF files. Month-boundary transitions (including the 2012-06-07 case and all days 1\u20136 events) were independently verified against raw NetCDF matrices with 0.0000 mm discrepancies.",
+    "audited_csv": "C:\\Users\\LENEVO\\Desktop\\SIH26001 LANSLIDES\\data\\processed\\rainfall\\sikkim_landslides_rainfall.csv",
+    "source_landslide_csv": "C:\\Users\\LENEVO\\Desktop\\SIH26001 LANSLIDES\\data\\processed\\landslides\\sikkim_landslides.csv",
+    "raw_chirps_dir": "C:\\Users\\LENEVO\\Desktop\\SIH26001 LANSLIDES\\data\\raw\\rainfall"
+  },
+  "dataset_counts": {
+    "total_landslide_records": 777,
+    "exact_dated_records": 74,
+    "records_with_rainfall_features": 74,
+    "records_without_rainfall_features": 703,
+    "unique_valid_event_dates": 52,
+    "earliest_valid_date": "2009-05-09",
+    "latest_valid_date": "2024-08-21"
+  },
+  "case_2012_06_07": {
+    "event_date": "2012-06-07",
+    "number_of_records": 3,
+    "sl_nos": [
+      26816,
+      26817,
+      26818
+    ],
+    "expected_7d_window": [
+      "2012-06-01",
+      "2012-06-02",
+      "2012-06-03",
+      "2012-06-04",
+      "2012-06-05",
+      "2012-06-06",
+      "2012-06-07"
+    ],
+    "required_months": [
+      "chirps-v2.0.2012.06.days_p05.nc"
+    ],
+    "may_2012_needed": false,
+    "is_correct": true
+  },
+  "month_boundary_events": {
+    "total_day_1_to_6_dates": 9,
+    "total_events_checked": 10,
+    "all_correct": true,
+    "details": [
+      {
+        "sl_no": 26512,
+        "event_date": "2013-09-01",
+        "lat": 27.31892,
+        "lon": 88.16222,
+        "expected_dates": [
+          "2013-08-26",
+          "2013-08-27",
+          "2013-08-28",
+          "2013-08-29",
+          "2013-08-30",
+          "2013-08-31",
+          "2013-09-01"
+        ],
+        "months_used": [
+          "chirps-v2.0.2013.08.days_p05.nc",
+          "chirps-v2.0.2013.09.days_p05.nc"
+        ],
+        "daily_values": [
+          29.7162,
+          0.0,
+          0.0,
+          0.0,
+          14.8581,
+          14.8581,
+          26.2985
+        ],
+        "csv_24h": 26.2985,
+        "calc_24h": 26.2985,
+        "csv_72h": 56.0148,
+        "calc_72h": 56.0148,
+        "csv_7d": 85.731,
+        "calc_7d": 85.731,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26644,
+        "event_date": "2014-07-01",
+        "lat": 27.5091,
+        "lon": 88.53848,
+        "expected_dates": [
+          "2014-06-25",
+          "2014-06-26",
+          "2014-06-27",
+          "2014-06-28",
+          "2014-06-29",
+          "2014-06-30",
+          "2014-07-01"
+        ],
+        "months_used": [
+          "chirps-v2.0.2014.06.days_p05.nc",
+          "chirps-v2.0.2014.07.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          46.4246,
+          23.2123,
+          0.0,
+          46.4246,
+          0.0,
+          0.0
+        ],
+        "csv_24h": 0.0,
+        "calc_24h": 0.0,
+        "csv_72h": 46.4246,
+        "calc_72h": 46.4246,
+        "csv_7d": 116.0614,
+        "calc_7d": 116.0614,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26713,
+        "event_date": "2015-06-01",
+        "lat": 27.46166,
+        "lon": 88.52341,
+        "expected_dates": [
+          "2015-05-26",
+          "2015-05-27",
+          "2015-05-28",
+          "2015-05-29",
+          "2015-05-30",
+          "2015-05-31",
+          "2015-06-01"
+        ],
+        "months_used": [
+          "chirps-v2.0.2015.05.days_p05.nc",
+          "chirps-v2.0.2015.06.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          0.0,
+          0.0,
+          10.4645,
+          20.929,
+          0.0,
+          6.6679
+        ],
+        "csv_24h": 6.6679,
+        "calc_24h": 6.6679,
+        "csv_72h": 27.5969,
+        "calc_72h": 27.5969,
+        "csv_7d": 38.0614,
+        "calc_7d": 38.0614,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26718,
+        "event_date": "2018-08-02",
+        "lat": 27.39305556,
+        "lon": 88.63527778,
+        "expected_dates": [
+          "2018-07-27",
+          "2018-07-28",
+          "2018-07-29",
+          "2018-07-30",
+          "2018-07-31",
+          "2018-08-01",
+          "2018-08-02"
+        ],
+        "months_used": [
+          "chirps-v2.0.2018.07.days_p05.nc",
+          "chirps-v2.0.2018.08.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          36.0833,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "csv_24h": 0.0,
+        "calc_24h": 0.0,
+        "csv_72h": 0.0,
+        "calc_72h": 0.0,
+        "csv_7d": 36.0833,
+        "calc_7d": 36.0833,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26752,
+        "event_date": "2021-06-01",
+        "lat": 27.32663889,
+        "lon": 88.61016667,
+        "expected_dates": [
+          "2021-05-26",
+          "2021-05-27",
+          "2021-05-28",
+          "2021-05-29",
+          "2021-05-30",
+          "2021-05-31",
+          "2021-06-01"
+        ],
+        "months_used": [
+          "chirps-v2.0.2021.05.days_p05.nc",
+          "chirps-v2.0.2021.06.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "csv_24h": 0.0,
+        "calc_24h": 0.0,
+        "csv_72h": 0.0,
+        "calc_72h": 0.0,
+        "csv_7d": 0.0,
+        "calc_7d": 0.0,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26755,
+        "event_date": "2021-06-05",
+        "lat": 27.37055556,
+        "lon": 88.61611111,
+        "expected_dates": [
+          "2021-05-30",
+          "2021-05-31",
+          "2021-06-01",
+          "2021-06-02",
+          "2021-06-03",
+          "2021-06-04",
+          "2021-06-05"
+        ],
+        "months_used": [
+          "chirps-v2.0.2021.05.days_p05.nc",
+          "chirps-v2.0.2021.06.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          19.7196
+        ],
+        "csv_24h": 19.7196,
+        "calc_24h": 19.7196,
+        "csv_72h": 19.7196,
+        "calc_72h": 19.7196,
+        "csv_7d": 19.7196,
+        "calc_7d": 19.7196,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26739,
+        "event_date": "2021-06-06",
+        "lat": 27.33941667,
+        "lon": 88.60990556,
+        "expected_dates": [
+          "2021-05-31",
+          "2021-06-01",
+          "2021-06-02",
+          "2021-06-03",
+          "2021-06-04",
+          "2021-06-05",
+          "2021-06-06"
+        ],
+        "months_used": [
+          "chirps-v2.0.2021.05.days_p05.nc",
+          "chirps-v2.0.2021.06.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          22.0913,
+          0.0
+        ],
+        "csv_24h": 0.0,
+        "calc_24h": 0.0,
+        "csv_72h": 22.0913,
+        "calc_72h": 22.0913,
+        "csv_7d": 22.0913,
+        "calc_7d": 22.0913,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26771,
+        "event_date": "2021-08-01",
+        "lat": 27.236,
+        "lon": 88.75722222,
+        "expected_dates": [
+          "2021-07-26",
+          "2021-07-27",
+          "2021-07-28",
+          "2021-07-29",
+          "2021-07-30",
+          "2021-07-31",
+          "2021-08-01"
+        ],
+        "months_used": [
+          "chirps-v2.0.2021.07.days_p05.nc",
+          "chirps-v2.0.2021.08.days_p05.nc"
+        ],
+        "daily_values": [
+          157.3431,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          52.4477,
+          0.0
+        ],
+        "csv_24h": 0.0,
+        "calc_24h": 0.0,
+        "csv_72h": 52.4477,
+        "calc_72h": 52.4477,
+        "csv_7d": 209.7909,
+        "calc_7d": 209.7909,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26802,
+        "event_date": "2023-10-04",
+        "lat": 27.17748333,
+        "lon": 88.52165833,
+        "expected_dates": [
+          "2023-09-28",
+          "2023-09-29",
+          "2023-09-30",
+          "2023-10-01",
+          "2023-10-02",
+          "2023-10-03",
+          "2023-10-04"
+        ],
+        "months_used": [
+          "chirps-v2.0.2023.09.days_p05.nc",
+          "chirps-v2.0.2023.10.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          0.0,
+          36.4218,
+          0.0,
+          0.0,
+          75.9286,
+          0.0
+        ],
+        "csv_24h": 0.0,
+        "calc_24h": 0.0,
+        "csv_72h": 75.9286,
+        "calc_72h": 75.9286,
+        "csv_7d": 112.3504,
+        "calc_7d": 112.3504,
+        "is_correct": true
+      },
+      {
+        "sl_no": 26806,
+        "event_date": "2023-10-04",
+        "lat": 27.40251944,
+        "lon": 88.51868056,
+        "expected_dates": [
+          "2023-09-28",
+          "2023-09-29",
+          "2023-09-30",
+          "2023-10-01",
+          "2023-10-02",
+          "2023-10-03",
+          "2023-10-04"
+        ],
+        "months_used": [
+          "chirps-v2.0.2023.09.days_p05.nc",
+          "chirps-v2.0.2023.10.days_p05.nc"
+        ],
+        "daily_values": [
+          0.0,
+          0.0,
+          27.7709,
+          0.0,
+          0.0,
+          57.9345,
+          0.0
+        ],
+        "csv_24h": 0.0,
+        "calc_24h": 0.0,
+        "csv_72h": 57.9345,
+        "calc_72h": 57.9345,
+        "csv_7d": 85.7054,
+        "calc_7d": 85.7054,
+        "is_correct": true
+      }
+    ]
+  },
+  "mathematical_validation": {
+    "negative_violations": 0,
+    "72h_lt_24h_violations": 0,
+    "7d_lt_72h_violations": 0,
+    "max_abs_diff_24h": 4.704589844095608e-05,
+    "max_abs_diff_72h": 4.8046874994156497e-05,
+    "max_abs_diff_7d": 4.9302673339468583e-05,
+    "all_recalculated_values_match": true
+  },
+  "spatial_validation": {
+    "coordinates_valid": true,
+    "coordinate_swap_detected": false,
+    "nearest_cell_extraction_exact": true
+  },
+  "raw_data_safety": {
+    "raw_nc_files_present": 35,
+    "raw_nc_total_bytes": 3371207282,
+    "raw_nc_files_modified": false,
+    "raw_nc_files_deleted": false
+  },
+  "manifest_audit": {
+    "math_required_count": 35,
+    "manifest_file_count": 35,
+    "actual_nc_file_count": 35,
+    "missing_files": [],
+    "unexpected_files": [],
+    "manifest_exact_match": true
+  }
+}

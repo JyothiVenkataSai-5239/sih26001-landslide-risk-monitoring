@@ -1,0 +1,73 @@
+{
+  "metadata": {
+    "dataset_name": "CHIRPS v2.0 Global Daily 0.05\u00b0 Precipitation",
+    "source_agency": "Climate Hazards Center, UC Santa Barbara",
+    "official_portal": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/netcdf/p05/",
+    "spatial_resolution": "0.05 degrees (~5.5 km)",
+    "temporal_resolution": "Daily",
+    "spatial_extraction_method": "Nearest grid cell center lookup",
+    "rainfall_units": "millimeters (mm)",
+    "extraction_timestamp": "2026-09-08T14:46:02.827217"
+  },
+  "inventory_counts": {
+    "total_landslide_records": 777,
+    "dated_records_valid": 74,
+    "records_with_rainfall_features": 74,
+    "records_without_rainfall_features": 703,
+    "undated_records_na": 700,
+    "suspicious_future_typo_records": 3,
+    "unique_valid_event_dates": 52,
+    "earliest_valid_event_date": "2009-05-09",
+    "latest_valid_event_date": "2024-08-21"
+  },
+  "rainfall_feature_definitions": {
+    "rainfall_24h": "Precipitation accumulated on event calendar date D",
+    "rainfall_72h": "Precipitation accumulated over 3 days: D-2, D-1, D",
+    "rainfall_7d": "Precipitation accumulated over 7 days: D-6, D-5, D-4, D-3, D-2, D-1, D"
+  },
+  "statistics": {
+    "rainfall_24h": {
+      "min": 0.0,
+      "max": 110.98,
+      "mean": 14.112093243243244,
+      "std": 26.40958628955725
+    },
+    "rainfall_72h": {
+      "min": 0.0,
+      "max": 138.725,
+      "mean": 34.95030675675675,
+      "std": 39.240840933109794
+    },
+    "rainfall_7d": {
+      "min": 0.0,
+      "max": 209.7909,
+      "mean": 65.26765675675674,
+      "std": 54.27088597360488
+    }
+  },
+  "validation_checks": {
+    "negative_values": 0,
+    "72h_ge_24h_violations": 0,
+    "7d_ge_72h_violations": 0,
+    "missing_dated_values": 0,
+    "month_boundary_cases_verified": 10,
+    "status": "PASS"
+  },
+  "suspicious_dates_reported": [
+    {
+      "sl_no": 26811,
+      "slide_no": "SI/GYA/78A03/2025/01",
+      "raw_history": "11 September 2025"
+    },
+    {
+      "sl_no": 26812,
+      "slide_no": "SI/GTK/78A11/2025/02",
+      "raw_history": "19 July 2025"
+    },
+    {
+      "sl_no": 26813,
+      "slide_no": "SI/GTK/78A11/2025/03",
+      "raw_history": "31 July 2025 at 18:30 hrs."
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "metadata": {
+    "dataset_name": "ISRIC SoilGrids 250m v2.0",
+    "extraction_depth": "0-5cm mean",
+    "extraction_method": "Bilinear nearest point-to-raster sampling (rasterio.sample)",
+    "total_landslide_records_processed": 777,
+    "all_points_covered": true
+  },
+  "layers": {
+    "soil_clay_0_5cm": {
+      "file": "clay_0-5cm_mean.tif",
+      "property": "Clay content (0-5cm)",
+      "crs": "EPSG:4326",
+      "width": 885,
+      "height": 837,
+      "resolution": [
+        0.0022598870056497336,
+        0.0023894862604540014
+      ],
+      "bounds": {
+        "left": 88.0,
+        "bottom": 27.0,
+        "right": 90.00000000000001,
+        "top": 29.0
+      },
+      "nodata_value": null,
+      "points_inside_coverage": 777,
+      "points_outside_coverage": 0,
+      "missing_values_at_points": 0,
+      "raw_unit": "g/kg",
+      "physical_unit": "wt% (raw / 10)",
+      "scale_factor": 10.0,
+      "extracted_statistics": {
+        "min": 148.0,
+        "max": 314.0,
+        "mean": 263.19305019305017,
+        "std": 27.68988595841478
+      }
+    },
+    "soil_sand_0_5cm": {
+      "file": "sand_0-5cm_mean.tif",
+      "property": "Sand content (0-5cm)",
+      "crs": "EPSG:4326",
+      "width": 885,
+      "height": 837,
+      "resolution": [
+        0.0022598870056497336,
+        0.0023894862604540014
+      ],
+      "bounds": {
+        "left": 88.0,
+        "bottom": 27.0,
+        "right": 90.00000000000001,
+        "top": 29.0
+      },
+      "nodata_value": null,
+      "points_inside_coverage": 777,
+      "points_outside_coverage": 0,
+      "missing_values_at_points": 0,
+      "raw_unit": "g/kg",
+      "physical_unit": "wt% (raw / 10)",
+      "scale_factor": 10.0,
+      "extracted_statistics": {
+        "min": 320.0,
+        "max": 497.0,
+        "mean": 375.63963963963965,
+        "std": 29.912895836442814
+      }
+    },
+    "soil_silt_0_5cm": {
+      "file": "silt_0-5cm_mean.tif",
+      "property": "Silt content (0-5cm)",
+      "crs": "EPSG:4326",
+      "width": 885,
+      "height": 837,
+      "resolution": [
+        0.0022598870056497336,
+        0.0023894862604540014
+      ],
+      "bounds": {
+        "left": 88.0,
+        "bottom": 27.0,
+        "right": 90.00000000000001,
+        "top": 29.0
+      },
+      "nodata_value": null,
+      "points_inside_coverage": 777,
+      "points_outside_coverage": 0,
+      "missing_values_at_points": 0,
+      "raw_unit": "g/kg",
+      "physical_unit": "wt% (raw / 10)",
+      "scale_factor": 10.0,
+      "extracted_statistics": {
+        "min": 296.0,
+        "max": 419.0,
+        "mean": 361.1879021879022,
+        "std": 22.35989026734661
+      }
+    },
+    "soil_bulk_density_0_5cm": {
+      "file": "bulk_density_0-5cm_mean.tif",
+      "property": "Bulk density of fine earth (0-5cm)",
+      "crs": "EPSG:4326",
+      "width": 885,
+      "height": 837,
+      "resolution": [
+        0.0022598870056497336,
+        0.0023894862604540014
+      ],
+      "bounds": {
+        "left": 88.0,
+        "bottom": 27.0,
+        "right": 90.00000000000001,
+        "top": 29.0
+      },
+      "nodata_value": null,
+      "points_inside_coverage": 777,
+      "points_outside_coverage": 0,
+      "missing_values_at_points": 0,
+      "raw_unit": "cg/cm\u00b3",
+      "physical_unit": "g/cm\u00b3 (raw / 100)",
+      "scale_factor": 100.0,
+      "extracted_statistics": {
+        "min": 81.0,
+        "max": 125.0,
+        "mean": 107.16087516087516,
+        "std": 7.370756035613901
+      }
+    }
+  }
+}

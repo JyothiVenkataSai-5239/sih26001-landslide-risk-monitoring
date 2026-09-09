@@ -1,0 +1,102 @@
+{
+  "elevation": {
+    "file_path": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/terrain/elevation.tif",
+    "relative_path": "data/processed/terrain/elevation.tif",
+    "crs": "EPSG:4326",
+    "width": 3960,
+    "height": 3240,
+    "resolution": [
+      0.0002777777777778146,
+      0.0002777777777778146
+    ],
+    "bounds": {
+      "left": 87.8998611111466,
+      "bottom": 27.00013888888452,
+      "right": 88.99986111114676,
+      "top": 27.90013888888464
+    },
+    "nodata_value": -9999.0,
+    "unit": "meters",
+    "statistics": {
+      "min": 182.0,
+      "max": 8376.0,
+      "mean": 3188.8083926455915,
+      "std": 1586.8269341236735
+    }
+  },
+  "slope": {
+    "file_path": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/terrain/slope.tif",
+    "relative_path": "data/processed/terrain/slope.tif",
+    "crs": "EPSG:4326",
+    "width": 3960,
+    "height": 3240,
+    "resolution": [
+      0.0002777777777778146,
+      0.0002777777777778146
+    ],
+    "bounds": {
+      "left": 87.8998611111466,
+      "bottom": 27.00013888888452,
+      "right": 88.99986111114676,
+      "top": 27.90013888888464
+    },
+    "nodata_value": -9999.0,
+    "unit": "degrees",
+    "statistics": {
+      "min": 0.0,
+      "max": 87.0707472523909,
+      "mean": 28.737734081172125,
+      "std": 12.045329119274056
+    }
+  },
+  "aspect": {
+    "file_path": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/terrain/aspect.tif",
+    "relative_path": "data/processed/terrain/aspect.tif",
+    "crs": "EPSG:4326",
+    "width": 3960,
+    "height": 3240,
+    "resolution": [
+      0.0002777777777778146,
+      0.0002777777777778146
+    ],
+    "bounds": {
+      "left": 87.8998611111466,
+      "bottom": 27.00013888888452,
+      "right": 88.99986111114676,
+      "top": 27.90013888888464
+    },
+    "nodata_value": -9999.0,
+    "unit": "degrees (0-360, flat=-1)",
+    "statistics": {
+      "min": -0.0,
+      "max": 359.92717657800796,
+      "mean": 179.7246656704836,
+      "std": 107.35897124181511
+    }
+  },
+  "curvature": {
+    "file_path": "C:/Users/LENEVO/Desktop/SIH26001 LANSLIDES/data/processed/terrain/curvature.tif",
+    "relative_path": "data/processed/terrain/curvature.tif",
+    "crs": "EPSG:4326",
+    "width": 3960,
+    "height": 3240,
+    "resolution": [
+      0.0002777777777778146,
+      0.0002777777777778146
+    ],
+    "bounds": {
+      "left": 87.8998611111466,
+      "bottom": 27.00013888888452,
+      "right": 88.99986111114676,
+      "top": 27.90013888888464
+    },
+    "nodata_value": -9999.0,
+    "unit": "100 * m^-1 (convex > 0, concave < 0)",
+    "statistics": {
+      "min": -590.4033127062148,
+      "max": 253.60314404164353,
+      "mean": -1.0611556417690014e-08,
+      "std": 2.1248272606502914
+    }
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "metadata": {
+    "dataset_name": "SIH26001 Sikkim Pilot ML Training Dataset",
+    "created_at": "2026-09-08 21:57:44",
+    "execution_time_seconds": 12.53,
+    "crs": "EPSG:4326 (WGS 84)",
+    "output_csv": "C:\\Users\\LENEVO\\Desktop\\SIH26001 LANSLIDES\\data\\processed\\ml\\sikkim_ml_dataset.csv",
+    "pilot_region": "Sikkim, India"
+  },
+  "sample_counts": {
+    "total_samples": 1554,
+    "positive_samples": 777,
+    "negative_samples": 777,
+    "class_ratio": "1:1",
+    "dated_event_positive_samples": 74,
+    "baseline_inventory_positive_samples": 703,
+    "background_negative_samples": 777,
+    "dated_rainfall_samples": 74,
+    "undated_samples": 1480
+  },
+  "spatial_integrity": {
+    "buffer_threshold_meters": 1000.0,
+    "min_distance_to_landslide_observed_meters": 1001.5,
+    "spatial_leakage_violations": 0,
+    "positive_duplicate_coords": 3,
+    "negative_duplicate_coords": 0,
+    "cross_duplicate_coords": 0,
+    "latitude_bounds": [
+      27.05111111110675,
+      27.843333333329078
+    ],
+    "longitude_bounds": [
+      88.05111111114662,
+      88.84916666670229
+    ]
+  },
+  "feature_statistics": {
+    "elevation": {
+      "min": 274.0,
+      "max": 4497.0,
+      "mean": 2021.2522522522522,
+      "std": 1123.4585470613965,
+      "missing": 0
+    },
+    "slope": {
+      "min": 2.4320216178894043,
+      "max": 77.11800384521484,
+      "mean": 31.160834202588447,
+      "std": 9.919306316441139,
+      "missing": 0
+    },
+    "aspect": {
+      "min": -0.0,
+      "max": 359.5176086425781,
+      "mean": 184.01927254407485,
+      "std": 110.96764672559236,
+      "missing": 0
+    },
+    "curvature": {
+      "min": -22.110811233520508,
+      "max": 12.450385093688965,
+      "mean": -0.10253346480868239,
+      "std": 1.8714092586383635,
+      "missing": 0
+    },
+    "land_cover": {
+      "min": 10.0,
+      "max": 100.0,
+      "mean": 17.67052767052767,
+      "std": 18.167272254706607,
+      "missing": 0
+    },
+    "soil_clay_0_5cm": {
+      "min": 111.0,
+      "max": 345.0,
+      "mean": 247.65765765765767,
+      "std": 46.68800056989314,
+      "missing": 0
+    },
+    "soil_sand_0_5cm": {
+      "min": 277.0,
+      "max": 571.0,
+      "mean": 397.15379665379663,
+      "std": 57.51870964456368,
+      "missing": 0
+    },
+    "soil_silt_0_5cm": {
+      "min": 271.0,
+      "max": 428.0,
+      "mean": 355.1949806949807,
+      "std": 25.61586458143893,
+      "missing": 0
+    },
+    "soil_bulk_density_0_5cm": {
+      "min": 81.0,
+      "max": 125.0,
+      "mean": 106.26833976833977,
+      "std": 7.055985403693068,
+      "missing": 0
+    }
+  },
+  "rainfall_statistics_dated_subset": {
+    "rainfall_24h": {
+      "min": 0.0,
+      "max": 110.98,
+      "mean": 14.112093243243244,
+      "std": 26.40958628955725,
+      "populated": 74,
+      "missing": 1480
+    },
+    "rainfall_72h": {
+      "min": 0.0,
+      "max": 138.725,
+      "mean": 34.95030675675675,
+      "std": 39.240840933109794,
+      "populated": 74,
+      "missing": 1480
+    },
+    "rainfall_7d": {
+      "min": 0.0,
+      "max": 209.7909,
+      "mean": 65.26765675675674,
+      "std": 54.27088597360488,
+      "populated": 74,
+      "missing": 1480
+    }
+  },
+  "missing_values_by_column": {
+    "sample_id": 0,
+    "label": 0,
+    "sample_type": 0,
+    "is_dated": 0,
+    "latitude": 0,
+    "longitude": 0,
+    "district": 0,
+    "elevation": 0,
+    "slope": 0,
+    "aspect": 0,
+    "curvature": 0,
+    "land_cover": 0,
+    "soil_clay_0_5cm": 0,
+    "soil_sand_0_5cm": 0,
+    "soil_silt_0_5cm": 0,
+    "soil_bulk_density_0_5cm": 0,
+    "rainfall_24h": 1480,
+    "rainfall_72h": 1480,
+    "rainfall_7d": 1480,
+    "rainfall_event_date": 1480,
+    "history": 1433,
+    "sl_no": 777,
+    "slide_name": 1332,
+    "movement_type": 781,
+    "material_involved": 777
+  },
+  "class_breakdown": {
+    "landslide (1)": 777,
+    "non-landslide (0)": 777
+  },
+  "land_cover_distribution": {
+    "10": 1227,
+    "30": 178,
+    "50": 71,
+    "100": 38,
+    "60": 32,
+    "70": 6,
+    "80": 2
+  },
+  "district_distribution": {
+    "North Sikkim": 423,
+    "East Sikkim": 413,
+    "West Sikkim": 386,
+    "South Sikkim": 258,
+    "Gyalshing": 18,
+    "West District": 14,
+    "Namchi": 13,
+    "Gangtok District": 12,
+    "Mangan": 6,
+    "Pakyong": 4,
+    "Soreng": 3,
+    "West district": 2,
+    "East Sikkim (Near Kaabi)": 1,
+    "Geyzing": 1
+  }
+}

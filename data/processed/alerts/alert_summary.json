@@ -1,0 +1,260 @@
+{
+  "step": "STEP 14 \u2014 ALERT ENGINE",
+  "timestamp_utc": "2026-09-08T18:05:43Z",
+  "input_files": [
+    "data/processed/forecast/forecast_risk_hotspots.csv",
+    "data/processed/forecast/forecast_risk_grid.csv"
+  ],
+  "alert_threshold": "Risk >= 0.55",
+  "severity_mapping": {
+    "HIGH": "0.55 <= Risk < 0.75",
+    "VERY HIGH": "Risk >= 0.75"
+  },
+  "total_alerts_generated": 3475,
+  "high_alerts_count": 3462,
+  "very_high_alerts_count": 13,
+  "duplicate_alerts_rejected": 0,
+  "hotspot_corridor_alerts": {
+    "total": 22,
+    "high": 9,
+    "very_high": 13,
+    "alerts_breakdown": [
+      {
+        "alert_id": "ALT-HOTSPOT-0001",
+        "station_id": "STN_01_GANGTOK",
+        "location": "Gangtok - Lumsay Corridor (NH10)",
+        "district": "Gangtok District",
+        "forecast_horizon": "+6h",
+        "risk_score": 0.7468,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": 24.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0002",
+        "station_id": "STN_01_GANGTOK",
+        "location": "Gangtok - Lumsay Corridor (NH10)",
+        "district": "Gangtok District",
+        "forecast_horizon": "+12h",
+        "risk_score": 0.8493,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 48.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0003",
+        "station_id": "STN_01_GANGTOK",
+        "location": "Gangtok - Lumsay Corridor (NH10)",
+        "district": "Gangtok District",
+        "forecast_horizon": "+24h",
+        "risk_score": 0.9167,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 72.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0004",
+        "station_id": "STN_01_GANGTOK",
+        "location": "Gangtok - Lumsay Corridor (NH10)",
+        "district": "Gangtok District",
+        "forecast_horizon": "+48h",
+        "risk_score": 0.83,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 110.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0005",
+        "station_id": "STN_02_RONGLI",
+        "location": "Rongli - Rolep Hotspot Corridor",
+        "district": "Pakyong District",
+        "forecast_horizon": "+6h",
+        "risk_score": 0.7772,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 28.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0006",
+        "station_id": "STN_02_RONGLI",
+        "location": "Rongli - Rolep Hotspot Corridor",
+        "district": "Pakyong District",
+        "forecast_horizon": "+12h",
+        "risk_score": 0.88,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 55.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0007",
+        "station_id": "STN_02_RONGLI",
+        "location": "Rongli - Rolep Hotspot Corridor",
+        "district": "Pakyong District",
+        "forecast_horizon": "+24h",
+        "risk_score": 0.9055,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 85.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0008",
+        "station_id": "STN_02_RONGLI",
+        "location": "Rongli - Rolep Hotspot Corridor",
+        "district": "Pakyong District",
+        "forecast_horizon": "+48h",
+        "risk_score": 0.8298,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 130.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0009",
+        "station_id": "STN_03_PAKYONG",
+        "location": "Pakyong Airport / Pachey Slide Zone",
+        "district": "Pakyong District",
+        "forecast_horizon": "+6h",
+        "risk_score": 0.6537,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": 20.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0010",
+        "station_id": "STN_03_PAKYONG",
+        "location": "Pakyong Airport / Pachey Slide Zone",
+        "district": "Pakyong District",
+        "forecast_horizon": "+12h",
+        "risk_score": 0.7367,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": 40.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0011",
+        "station_id": "STN_03_PAKYONG",
+        "location": "Pakyong Airport / Pachey Slide Zone",
+        "district": "Pakyong District",
+        "forecast_horizon": "+24h",
+        "risk_score": 0.8208,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 65.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0012",
+        "station_id": "STN_03_PAKYONG",
+        "location": "Pakyong Airport / Pachey Slide Zone",
+        "district": "Pakyong District",
+        "forecast_horizon": "+48h",
+        "risk_score": 0.7626,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 95.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0013",
+        "station_id": "STN_04_MANGAN",
+        "location": "Mangan - Chungthang Highway",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+6h",
+        "risk_score": 0.7835,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 35.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0014",
+        "station_id": "STN_04_MANGAN",
+        "location": "Mangan - Chungthang Highway",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+12h",
+        "risk_score": 0.8495,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 68.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0015",
+        "station_id": "STN_04_MANGAN",
+        "location": "Mangan - Chungthang Highway",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+24h",
+        "risk_score": 0.8495,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 98.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0016",
+        "station_id": "STN_04_MANGAN",
+        "location": "Mangan - Chungthang Highway",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+48h",
+        "risk_score": 0.7813,
+        "alert_severity": "VERY HIGH",
+        "forecast_rainfall_mm": 145.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0017",
+        "station_id": "STN_05_NAMCHI",
+        "location": "Namchi - Jorethang Corridor",
+        "district": "Namchi (South Sikkim)",
+        "forecast_horizon": "+24h",
+        "risk_score": 0.5763,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": 44.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0018",
+        "station_id": "STN_05_NAMCHI",
+        "location": "Namchi - Jorethang Corridor",
+        "district": "Namchi (South Sikkim)",
+        "forecast_horizon": "+48h",
+        "risk_score": 0.5771,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": 70.0
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0019",
+        "station_id": "STN_08_OFFLINE",
+        "location": "Upper Lachen Remote Sensor Node (Telemetry Offline)",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+6h",
+        "risk_score": 0.71,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": NaN
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0020",
+        "station_id": "STN_08_OFFLINE",
+        "location": "Upper Lachen Remote Sensor Node (Telemetry Offline)",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+12h",
+        "risk_score": 0.71,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": NaN
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0021",
+        "station_id": "STN_08_OFFLINE",
+        "location": "Upper Lachen Remote Sensor Node (Telemetry Offline)",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+24h",
+        "risk_score": 0.71,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": NaN
+      },
+      {
+        "alert_id": "ALT-HOTSPOT-0022",
+        "station_id": "STN_08_OFFLINE",
+        "location": "Upper Lachen Remote Sensor Node (Telemetry Offline)",
+        "district": "Mangan (North Sikkim)",
+        "forecast_horizon": "+48h",
+        "risk_score": 0.71,
+        "alert_severity": "HIGH",
+        "forecast_rainfall_mm": NaN
+      }
+    ]
+  },
+  "regional_grid_alerts": {
+    "total": 3453,
+    "high": 3453,
+    "very_high": 0
+  },
+  "dashboard_alert_feed_file": "data/processed/alerts/alerts.csv",
+  "telegram_integration": {
+    "status": "disabled",
+    "dispatched": false,
+    "reason": "Credentials unavailable: TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID not found in environment.",
+    "target_channel": "Private Team / Judge Test Channel Only",
+    "security": "Credentials read solely from environment variables TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID. Zero hardcoding.",
+    "public_channel_safeguard": "Strictly blocked from sending to WhatsApp, public channels, or official state disaster feeds.",
+    "sample_message_payload": "\ud83d\udea8 *[SIMULATED / PROTOTYPE ALERT]* \ud83d\udea8\n---------------------------------------------\n\ud83d\udd34 *SEVERITY:* VERY HIGH WARNING\n\ud83d\udccd *LOCATION:* Gangtok - Lumsay Corridor (NH10)\n\ud83c\udfdb *DISTRICT:* Gangtok District\n\u23f1 *FORECAST HORIZON:* +24h Outlook\n\ud83d\udcc8 *FORECAST RISK SCORE:* 0.9167\n\ud83c\udfd4 *STATIC SUSCEPTIBILITY:* 0.8920\n\ud83c\udf27 *TRIGGER INDEX (R_idx):* 0.984\n\ud83d\udca7 *FORECAST RAINFALL:* 72.0 mm\n\ud83d\udd52 *TIMESTAMP:* 2026-09-08T18:05:43Z\n---------------------------------------------\n\u26a0\ufe0f *RECOMMENDED ACTION:*\nDeploy emergency clearance machinery, alert NDRF/SDRF, restrict heavy traffic along corridor.\n\n\u2139\ufe0f *SYSTEM NOTICE:*\n_In this prototype, alerts are automatically dispatched to a simulated DDMA test channel and displayed on the live GIS dashboard. In a production deployment, the same alert API can be connected to authorized state disaster-management communication channels._"
+  },
+  "disclaimer": "In this prototype, alerts are automatically dispatched to a simulated DDMA test channel and displayed on the live GIS dashboard. In a production deployment, the same alert API can be connected to authorized state disaster-management communication channels."
+}

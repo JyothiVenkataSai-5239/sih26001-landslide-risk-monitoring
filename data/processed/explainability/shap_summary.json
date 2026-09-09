@@ -1,0 +1,150 @@
+{
+  "step": "STEP 12 \u2014 SHAP EXPLAINABILITY",
+  "model_used": "LogisticRegression",
+  "model_path": "models\\best_model.joblib",
+  "shap_method": "LinearExplainer (interventional perturbation)",
+  "background_samples_count": 100,
+  "test_samples_explained": 353,
+  "base_value_log_odds": -0.0392,
+  "global_feature_ranking": [
+    {
+      "rank": 1,
+      "feature": "Elevation (m)",
+      "mean_abs_shap": 1.4884
+    },
+    {
+      "rank": 2,
+      "feature": "Soil Bulk Density (cg/cm\u00b3)",
+      "mean_abs_shap": 0.7531
+    },
+    {
+      "rank": 3,
+      "feature": "LULC: Tree Cover (10)",
+      "mean_abs_shap": 0.6645
+    },
+    {
+      "rank": 4,
+      "feature": "Slope Gradient (\u00b0)",
+      "mean_abs_shap": 0.3367
+    },
+    {
+      "rank": 5,
+      "feature": "LULC: Built-up / Corridor (50)",
+      "mean_abs_shap": 0.2865
+    },
+    {
+      "rank": 6,
+      "feature": "Soil Sand Content (g/kg)",
+      "mean_abs_shap": 0.0934
+    },
+    {
+      "rank": 7,
+      "feature": "Soil Clay Content (g/kg)",
+      "mean_abs_shap": 0.0799
+    },
+    {
+      "rank": 8,
+      "feature": "Aspect (\u00b0)",
+      "mean_abs_shap": 0.0596
+    },
+    {
+      "rank": 9,
+      "feature": "Soil Silt Content (g/kg)",
+      "mean_abs_shap": 0.0522
+    },
+    {
+      "rank": 10,
+      "feature": "LULC: Bare / Sparse Veg (60)",
+      "mean_abs_shap": 0.0415
+    },
+    {
+      "rank": 11,
+      "feature": "Profile Curvature",
+      "mean_abs_shap": 0.0338
+    },
+    {
+      "rank": 12,
+      "feature": "LULC: Grassland (30)",
+      "mean_abs_shap": 0.0103
+    },
+    {
+      "rank": 13,
+      "feature": "LULC: Moss / Lichen (100)",
+      "mean_abs_shap": 0.0084
+    },
+    {
+      "rank": 14,
+      "feature": "LULC: Water Bodies (80)",
+      "mean_abs_shap": 0.0022
+    },
+    {
+      "rank": 15,
+      "feature": "LULC: Snow / Ice (70)",
+      "mean_abs_shap": 0.0
+    }
+  ],
+  "representative_high_risk_sample": {
+    "sl_no": 26787,
+    "slide_name": "Lumsay Slide",
+    "district": "Gangtok District",
+    "latitude": 27.3263,
+    "longitude": 88.5954,
+    "elevation_m": 1014.0,
+    "slope_deg": 22.2,
+    "land_cover_class": 50,
+    "predicted_susceptibility_prob": 0.9964,
+    "base_log_odds": -0.0392,
+    "sum_shap_values": 5.6535,
+    "top_attributions": [
+      {
+        "feature": "LULC: Built-up / Corridor (50)",
+        "shap_value": 2.6284,
+        "transformed_value": 1.0,
+        "effect": "increases_risk"
+      },
+      {
+        "feature": "Elevation (m)",
+        "shap_value": 2.0203,
+        "transformed_value": -0.8511,
+        "effect": "increases_risk"
+      },
+      {
+        "feature": "LULC: Tree Cover (10)",
+        "shap_value": 1.7994,
+        "transformed_value": 0.0,
+        "effect": "increases_risk"
+      },
+      {
+        "feature": "Soil Bulk Density (cg/cm\u00b3)",
+        "shap_value": -0.5387,
+        "transformed_value": 0.4636,
+        "effect": "decreases_risk"
+      },
+      {
+        "feature": "Slope Gradient (\u00b0)",
+        "shap_value": -0.4112,
+        "transformed_value": -0.9071,
+        "effect": "decreases_risk"
+      },
+      {
+        "feature": "Soil Sand Content (g/kg)",
+        "shap_value": 0.1359,
+        "transformed_value": -0.9619,
+        "effect": "increases_risk"
+      },
+      {
+        "feature": "Soil Silt Content (g/kg)",
+        "shap_value": 0.078,
+        "transformed_value": 1.2902,
+        "effect": "increases_risk"
+      },
+      {
+        "feature": "Soil Clay Content (g/kg)",
+        "shap_value": 0.0601,
+        "transformed_value": 0.4887,
+        "effect": "increases_risk"
+      }
+    ]
+  },
+  "scientific_disclaimer": "SHAP values quantify the additive contribution of each conditioning feature to the trained susceptibility model log-odds output. SHAP does NOT establish deterministic physical or causal mechanisms; values reflect statistical associations within the historical Sikkim inventory and environmental conditioning datasets."
+}

@@ -1,0 +1,1150 @@
+{
+  "validation_metadata": {
+    "validation_timestamp": "2026-09-08T14:37:02.741095",
+    "validation_status": "PASS",
+    "status_reasons": [
+      "All 35 official CHIRPS v2.0 monthly NetCDF files were successfully validated. All 777 landslide coordinates fall strictly within spatial bounds, and 100% of the 74 valid dated landslide events possess complete 24h, 72h, and 7-day daily antecedent rainfall coverage across the authentic raster grids."
+    ],
+    "product_name": "CHIRPS v2.0 Global Daily 0.05\u00b0 Precipitation",
+    "source_agency": "Climate Hazards Center, University of California, Santa Barbara (UCSB)",
+    "official_portal": "https://data.chc.ucsb.edu/products/CHIRPS-2.0/global_daily/netcdf/p05/"
+  },
+  "directory_inventory": {
+    "total_files_in_folder": 365,
+    "nc_files_count": 35,
+    "tif_files_count": 330,
+    "other_files_count": 0,
+    "total_storage_bytes": 3371547379,
+    "nc_storage_bytes": 3371207282,
+    "tif_storage_bytes": 340097,
+    "total_storage_gb": 3.3715,
+    "total_storage_gib": 3.14
+  },
+  "netcdf_validation": {
+    "all_files_opened_successfully": true,
+    "total_nc_files_validated": 35,
+    "dimensions_shape": [
+      2000,
+      7200
+    ],
+    "latitude_bounds": [
+      -49.974998474121094,
+      49.974998474121094
+    ],
+    "longitude_bounds": [
+      -179.97500610351562,
+      179.97500610351562
+    ],
+    "spatial_resolution_deg": [
+      0.05,
+      0.05
+    ],
+    "precipitation_variable": "precip",
+    "precipitation_dtype": "float32",
+    "precipitation_units": "mm/day",
+    "missing_value": -9999.0,
+    "fill_value": -9999.0,
+    "files": [
+      {
+        "filename": "chirps-v2.0.2009.05.days_p05.nc",
+        "size_bytes": 95952442,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2009-05-01",
+        "end_date": "2009-05-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2011.06.days_p05.nc",
+        "size_bytes": 84854756,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2011-06-01",
+        "end_date": "2011-06-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2012.06.days_p05.nc",
+        "size_bytes": 80770212,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2012-06-01",
+        "end_date": "2012-06-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2012.07.days_p05.nc",
+        "size_bytes": 91523320,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2012-07-01",
+        "end_date": "2012-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2013.08.days_p05.nc",
+        "size_bytes": 96886017,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2013-08-01",
+        "end_date": "2013-08-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2013.09.days_p05.nc",
+        "size_bytes": 86918793,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2013-09-01",
+        "end_date": "2013-09-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2014.06.days_p05.nc",
+        "size_bytes": 82489996,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2014-06-01",
+        "end_date": "2014-06-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2014.07.days_p05.nc",
+        "size_bytes": 85140836,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2014-07-01",
+        "end_date": "2014-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2014.08.days_p05.nc",
+        "size_bytes": 88785663,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2014-08-01",
+        "end_date": "2014-08-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2015.05.days_p05.nc",
+        "size_bytes": 96846948,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2015-05-01",
+        "end_date": "2015-05-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2015.06.days_p05.nc",
+        "size_bytes": 80240952,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2015-06-01",
+        "end_date": "2015-06-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2015.07.days_p05.nc",
+        "size_bytes": 83493352,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2015-07-01",
+        "end_date": "2015-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2016.08.days_p05.nc",
+        "size_bytes": 89007105,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2016-08-01",
+        "end_date": "2016-08-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2017.07.days_p05.nc",
+        "size_bytes": 89731237,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2017-07-01",
+        "end_date": "2017-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2018.07.days_p05.nc",
+        "size_bytes": 88889697,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2018-07-01",
+        "end_date": "2018-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2018.08.days_p05.nc",
+        "size_bytes": 130933484,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2018-08-01",
+        "end_date": "2018-08-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2019.04.days_p05.nc",
+        "size_bytes": 148785578,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2019-04-01",
+        "end_date": "2019-04-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2019.09.days_p05.nc",
+        "size_bytes": 80527609,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2019-09-01",
+        "end_date": "2019-09-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2020.05.days_p05.nc",
+        "size_bytes": 131349869,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2020-05-01",
+        "end_date": "2020-05-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2021.05.days_p05.nc",
+        "size_bytes": 92822514,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2021-05-01",
+        "end_date": "2021-05-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2021.06.days_p05.nc",
+        "size_bytes": 87643222,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2021-06-01",
+        "end_date": "2021-06-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2021.07.days_p05.nc",
+        "size_bytes": 87963173,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2021-07-01",
+        "end_date": "2021-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2021.08.days_p05.nc",
+        "size_bytes": 92136486,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2021-08-01",
+        "end_date": "2021-08-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2021.10.days_p05.nc",
+        "size_bytes": 88113986,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2021-10-01",
+        "end_date": "2021-10-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2022.05.days_p05.nc",
+        "size_bytes": 86958330,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2022-05-01",
+        "end_date": "2022-05-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2022.06.days_p05.nc",
+        "size_bytes": 123098684,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2022-06-01",
+        "end_date": "2022-06-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2022.07.days_p05.nc",
+        "size_bytes": 89735444,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2022-07-01",
+        "end_date": "2022-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2022.08.days_p05.nc",
+        "size_bytes": 93038409,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2022-08-01",
+        "end_date": "2022-08-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2022.10.days_p05.nc",
+        "size_bytes": 87806115,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2022-10-01",
+        "end_date": "2022-10-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2022.11.days_p05.nc",
+        "size_bytes": 91728135,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2022-11-01",
+        "end_date": "2022-11-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2023.03.days_p05.nc",
+        "size_bytes": 111612800,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2023-03-01",
+        "end_date": "2023-03-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2023.09.days_p05.nc",
+        "size_bytes": 79621473,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 30
+        },
+        "time_len": 30,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2023-09-01",
+        "end_date": "2023-09-30",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2023.10.days_p05.nc",
+        "size_bytes": 83376341,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2023-10-01",
+        "end_date": "2023-10-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2024.07.days_p05.nc",
+        "size_bytes": 86587660,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2024-07-01",
+        "end_date": "2024-07-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      },
+      {
+        "filename": "chirps-v2.0.2024.08.days_p05.nc",
+        "size_bytes": 175836644,
+        "status": "OPEN_SUCCESS",
+        "dimensions": {
+          "longitude": 7200,
+          "latitude": 2000,
+          "time": 31
+        },
+        "time_len": 31,
+        "lat_len": 2000,
+        "lon_len": 7200,
+        "lat_min": -49.974998474121094,
+        "lat_max": 49.974998474121094,
+        "lon_min": -179.97500610351562,
+        "lon_max": 179.97500610351562,
+        "res_deg": [
+          0.05,
+          0.05
+        ],
+        "start_date": "2024-08-01",
+        "end_date": "2024-08-31",
+        "variable_name": "precip",
+        "dtype": "float32",
+        "units": "mm/day",
+        "missing_value": -9999.0,
+        "fill_value": -9999.0,
+        "global_title": "CHIRPS Version 2.0",
+        "global_version": "Version 2.0"
+      }
+    ]
+  },
+  "naming_and_completeness": {
+    "pattern_matched_files_count": 35,
+    "unexpected_named_files_count": 0,
+    "expected_audit_files_count": 35,
+    "missing_expected_files_count": 0,
+    "missing_expected_files": []
+  },
+  "spatial_coverage": {
+    "total_landslide_records": 777,
+    "landslides_inside_bounds": 777,
+    "landslides_outside_bounds": 0,
+    "landslide_lat_min": 27.08275,
+    "landslide_lat_max": 27.749111,
+    "landslide_lon_min": 88.077111,
+    "landslide_lon_max": 88.840194,
+    "chirps_lat_min": -49.974998474121094,
+    "chirps_lat_max": 49.974998474121094,
+    "chirps_lon_min": -179.97500610351562,
+    "chirps_lon_max": 179.97500610351562,
+    "coverage_percentage": 100.0
+  },
+  "temporal_coverage": {
+    "total_dated_records_valid": 74,
+    "unique_valid_event_dates_count": 52,
+    "earliest_valid_event_date": "2009-05-09",
+    "latest_valid_event_date": "2024-08-21",
+    "events_with_complete_7d_lookback": 74,
+    "events_with_missing_days": 0,
+    "suspicious_future_dates_count": 3,
+    "suspicious_dates": [
+      {
+        "sl_no": 26811,
+        "slide_no": "SI/GYA/78A03/2025/01",
+        "date": "2025-09-11",
+        "raw_history": "11 September 2025"
+      },
+      {
+        "sl_no": 26812,
+        "slide_no": "SI/GTK/78A11/2025/02",
+        "date": "2025-07-19",
+        "raw_history": "19 July 2025"
+      },
+      {
+        "sl_no": 26813,
+        "slide_no": "SI/GTK/78A11/2025/03",
+        "date": "2025-07-31",
+        "raw_history": "31 July 2025 at 18:30 hrs."
+      }
+    ]
+  }
+}
