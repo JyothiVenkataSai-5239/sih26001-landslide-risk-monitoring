@@ -18,6 +18,7 @@ const MIN_ZOOM = 8   // Prevents zooming out to broad India / world view
 const MAX_ZOOM = 16  // Allows high-resolution corridor zoom
 const DEFAULT_ZOOM = 9.5
 const AUTO_REFRESH_INTERVAL_MS = 60000 // 60-second auto-refresh polling interval
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL || 'http://127.0.0.1:8000'
 
 // Subtle Sikkim State border outline coordinates
 const SIKKIM_BORDER_RING = [
@@ -149,7 +150,7 @@ export default function MapView() {
     if (!isBackground) setLoading(true)
     setIsRefreshing(true)
     setError(null)
-    const base = 'http://127.0.0.1:8000'
+    const base = API_BASE_URL
     const safe = (arr) => Array.isArray(arr) ? arr : []
 
     try {
@@ -296,7 +297,7 @@ export default function MapView() {
   useEffect(() => {
     const loadShapData = async () => {
       try {
-        const res = await axios.get('http://127.0.0.1:8000/explainability/shap-summary')
+        const res = await axios.get(`${API_BASE_URL}/explainability/shap-summary`)
         setShapData(res.data)
       } catch (err) {
         console.warn('SHAP data unavailable:', err.message)
